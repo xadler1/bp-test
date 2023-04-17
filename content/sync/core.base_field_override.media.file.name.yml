@@ -1,0 +1,22 @@
+uuid: 3c84f7f0-bf43-4ae8-adfd-efa66e13edc2
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.file
+_core:
+  default_config_hash: uKtxUqXK61EbMT74jJM6mMVDnjax5MtLqwRJ0_AM1_c
+id: media.file.name
+field_name: name
+entity_type: media
+bundle: file
+label: Jméno
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

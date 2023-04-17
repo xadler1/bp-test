@@ -1,0 +1,11 @@
+uuid: fce79c17-5ef2-4aa1-9ed4-ffeb648ca734
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: test_block
+title: 'Test block'
+content:
+  value: "<p>[site:name]</p>\r\n"
+  format: basic_html

@@ -1,0 +1,22 @@
+uuid: ff36bb5d-47ae-40f5-ada1-c5a7f45a70ca
+langcode: cs
+status: true
+dependencies:
+  theme:
+    - claro
+_core:
+  default_config_hash: ACjBZI5shAMiiUpsz-inLYVXDqNNXRnSzAWV3kV_8Hw
+id: claro_primary_local_tasks
+theme: claro
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Hlavní záložky'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

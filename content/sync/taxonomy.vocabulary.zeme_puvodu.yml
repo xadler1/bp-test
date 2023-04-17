@@ -1,0 +1,8 @@
+uuid: a15e9545-fadc-4b9b-9252-9285a0336c55
+langcode: cs
+status: true
+dependencies: {  }
+name: 'Země původu'
+vid: zeme_puvodu
+description: ''
+weight: -3

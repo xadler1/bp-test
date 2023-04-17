@@ -1,0 +1,29 @@
+uuid: db196e02-0ee1-472c-a8ad-65fee3c6e19e
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_object_type_basic
+    - node.type.fabric
+    - taxonomy.vocabulary.object_type_basic
+id: node.fabric.field_object_type_basic
+field_name: field_object_type_basic
+entity_type: node
+bundle: fabric
+label: 'Typ předmětu'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      object_type_basic: object_type_basic
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,11 @@
+uuid: 179c0b2a-eccc-4abe-9861-c7b87b337c6e
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: bp_move_result_summary
+title: 'BP move result summary'
+content:
+  value: "<script>\r\nvar summary = document.getElementsByClassName('view-header')[0];\r\nvar parent = document.getElementsByClassName('views-view-grid')[0];\r\nvar filters = main.getElementsByClassName('view-filters')[0];\r\nif (summary != null) {\r\n  filters.appendChild(summary);\r\n}\r\n</script>"
+  format: full_html

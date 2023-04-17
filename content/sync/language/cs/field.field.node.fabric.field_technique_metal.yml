@@ -1,0 +1,4 @@
+label: 'Pokovené nitě'
+settings:
+  on_label: Ano
+  off_label: Ne

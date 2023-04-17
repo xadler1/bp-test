@@ -1,0 +1,10 @@
+uuid: 13848796-6cbf-4234-8687-53db993e0303
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nzL5d024NjXIX_8TlT6uFAu973lmfkmHklJC-2i9rAE
+id: medium
+label: 'Výchozí střední formát data'
+locked: false
+pattern: 'D, m/d/Y - H:i'

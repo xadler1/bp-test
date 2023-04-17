@@ -1,0 +1,20 @@
+uuid: c1d0eb5d-59e6-40c5-9a11-e7dcb4e68b95
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.migrate_example_beer_styles
+  module:
+    - path
+id: taxonomy_term.migrate_example_beer_styles.path
+field_name: path
+entity_type: taxonomy_term
+bundle: migrate_example_beer_styles
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

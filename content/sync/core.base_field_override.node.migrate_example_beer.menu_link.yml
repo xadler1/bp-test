@@ -1,0 +1,20 @@
+uuid: 5a4a3daa-d7cc-4306-8a16-34e7168ab719
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_beer
+id: node.migrate_example_beer.menu_link
+field_name: menu_link
+entity_type: node
+bundle: migrate_example_beer
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

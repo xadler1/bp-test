@@ -1,0 +1,25 @@
+uuid: 4f6fe554-89fe-44b2-88e0-d73c93a4bf94
+langcode: cs
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - viewfield
+    - views
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_reference_orcid_with_link
+field_name: field_reference_orcid_with_link
+entity_type: node
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

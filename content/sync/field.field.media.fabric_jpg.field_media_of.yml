@@ -1,0 +1,29 @@
+uuid: 8c0a72f6-9335-4bbe-a8cb-659998e38f3e
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_of
+    - media.type.fabric_jpg
+    - node.type.fabric
+id: media.fabric_jpg.field_media_of
+field_name: field_media_of
+entity_type: media
+bundle: fabric_jpg
+label: 'Media of'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      fabric: fabric
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,50 @@
+uuid: 78c675e8-d461-42e6-87bc-30706acc2e58
+langcode: cs
+status: false
+dependencies:
+  config:
+    - views.view.bp_total_item_count
+  module:
+    - context
+    - islandora
+    - views
+  theme:
+    - islandora_muni
+id: islandora_muni_views_block__bp_total_item_count_block_1
+theme: islandora_muni
+region: secondary_menu
+weight: -17
+provider: null
+plugin: 'views_block:bp_total_item_count-block_1'
+settings:
+  id: 'views_block:bp_total_item_count-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

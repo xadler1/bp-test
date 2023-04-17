@@ -1,0 +1,31 @@
+uuid: 3da04294-568d-48f2-914f-00f0a8d28fa9
+langcode: cs
+status: true
+dependencies:
+  config:
+    - search_api.index.fabric_index
+    - views.view.fabric_search
+  module:
+    - views
+    - search_api_autocomplete
+id: fabric_search
+label: 'Vyhledávání tkanin'
+index_id: fabric_index
+suggester_settings:
+  server:
+    fields: {  }
+suggester_weights:
+  server: 0
+suggester_limits: {  }
+search_settings:
+  'views:fabric_search':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: false
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

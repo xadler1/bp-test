@@ -1,0 +1,28 @@
+uuid: 0a26e836-c19a-465e-9cb2-13db1e0aa77f
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file_size
+    - media.type.image
+  enforced:
+    module:
+      - islandora_core_feature
+_core:
+  default_config_hash: G8_aciRGv4iXPN6ddyZrHicmB5lQbj9X6yPY-UWIwmA
+id: media.image.field_file_size
+field_name: field_file_size
+entity_type: media
+bundle: image
+label: 'Velikost souboru'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

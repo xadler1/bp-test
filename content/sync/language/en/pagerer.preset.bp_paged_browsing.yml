@@ -1,0 +1,19 @@
+panes:
+  center:
+    config:
+      tags:
+        pages:
+          prefix_label: Page
+          suffix_label: 'of @total'
+          page_current_title: 'Current page'
+          page_current_reader: 'Current page'
+          first_title: First
+          first_reader: First
+          previous_title: Previous
+          previous_reader: Previous
+          next_title: Next
+          next_reader: Next
+          last_title: Last
+          last_reader: Last
+          pageset_empty: 'No pages to display.'
+          widget_title: 'Endter page number, then pres Enter.'

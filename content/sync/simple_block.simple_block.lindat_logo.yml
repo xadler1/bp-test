@@ -1,0 +1,11 @@
+uuid: 79d58f1e-444b-4366-82d3-72d478b8ee36
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: lindat_logo
+title: 'Lindat logo'
+content:
+  value: "<p><a href=\"https://it.muni.cz/phil/lindat-clariah#main\"><img alt=\"LINDAT-CLARIATH logo\" src=\"/sites/default/files/logo/LINDAT-CLARIAH-cz.svg\" /></a></p>\r\n"
+  format: full_html

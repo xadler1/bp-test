@@ -1,0 +1,173 @@
+uuid: 47adc597-3950-4146-bc5a-b5a89b3778a3
+langcode: en
+status: true
+dependencies: {  }
+id: fabric_import_media_psd
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: import_fabric_media
+label: 'Import fabric psd media'
+source:
+  plugin: csv
+  path: /var/www/html/drupal/web/sites/default/files/metadata_import_cisty.csv
+  delimiter: ','
+  enclosure: '"'
+  header_offset: 0
+  ids:
+    - image_id
+  fields:
+    -
+      name: image_refid
+      label: 'Katalogové číslo'
+    -
+      name: date_of_documentation
+      label: Datum
+    -
+      name: image_id
+      label: 'Identifikační číslo'
+    -
+      name: title
+      label: Název
+    -
+      name: datace
+      label: Datace
+    -
+      name: object_description
+      label: 'Způsob použití'
+    -
+      name: pattern_description_long
+      label: Dekor
+    -
+      name: technique_structure
+      label: 'Struktura tkaniny'
+    -
+      name: technique_base_type_desc
+      label: Základ
+    -
+      name: technique_effect
+      label: Efekty
+    -
+      name: technique_density
+      label: 'Poměr osnov / Dostava'
+    -
+      name: material
+      label: Materiál
+    -
+      name: technique_base_type
+      label: 'Technika základu'
+    -
+      name: technique_base_colour
+      label: 'Barva základu'
+    -
+      name: pattern_type
+      label: 'Okruh dekoru'
+    -
+      name: measurements_height_cm
+      label: 'Rozměr vzoru : min. výška (cm)'
+    -
+      name: measurements_width_cm
+      label: 'Rozměr vzoru : min. šířka (cm)'
+    -
+      name: technique_warp
+      label: Osnova
+    -
+      name: technique_broche
+      label: 'Broché útek'
+    -
+      name: technique_lance
+      label: 'Lancé útek'
+    -
+      name: technique_lisere
+      label: 'Liseré útek'
+    -
+      name: technique_metal
+      label: 'Pokovené nitě'
+    -
+      name: technique_riant
+      label: 'Filé riant'
+    -
+      name: technique_couvert
+      label: 'Filé couvert'
+    -
+      name: technique_onde
+      label: Ondé
+    -
+      name: technique_plate
+      label: Lamela
+    -
+      name: object_type_basic
+      label: 'Typ předmětu'
+    -
+      name: object_type_detailed
+      label: 'Typ textilie (extrakcí)'
+    -
+      name: cultural_context
+      label: 'Země původu'
+    -
+      name: pattern_description_short
+      label: 'Charakteristika dekoru'
+    -
+      name: pattern_subject
+      label: 'Motivy dekoru'
+    -
+      name: pattern_subject_detailed
+      label: 'Rostlinné motivy'
+    -
+      name: style_period
+      label: 'Stylové období'
+    -
+      name: relation
+      label: 'Souvisí s dekorem (extrakcí)'
+    -
+      name: relation_name
+      label: 'Souvisí s dekorem (extrakcí, název)'
+    -
+      name: source
+      label: 'Autor popisu'
+    -
+      name: textref
+      label: 'Prameny popisu'
+    -
+      name: rights
+      label: Licence
+  constants:
+    FILE_EXTENSION: .psd
+process:
+  image_filename:
+    -
+      plugin: skip_on_empty
+      method: row
+      source: image_id
+      message: 'Image name not provided, skipping import of media'
+    -
+      plugin: concat
+      source:
+        - image_id
+        - constants/FILE_EXTENSION
+  name: '@image_filename'
+  field_media_file:
+    plugin: migration_lookup
+    migration: fabric_import_files_psd
+    source: image_id
+  field_media_of:
+    plugin: migration_lookup
+    migration: fabric_import_metadata
+    source: image_id
+  uid:
+    -
+      plugin: skip_on_empty
+      method: process
+      message: 'No user for this file.'
+    -
+      plugin: migration_lookup
+      migration: users
+      source: author
+destination:
+  plugin: 'entity:media'
+  default_bundle: fabric_psd
+migration_dependencies:
+  required:
+    - fabric_import_files_psd
+    - fabric_import_metadata

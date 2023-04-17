@@ -1,0 +1,18 @@
+uuid: ee31439e-26bc-48cb-9900-b42543c4c256
+langcode: cs
+status: true
+dependencies: {  }
+id: node__fabric
+label: 'Content: Tkanina'
+tags:
+  dcterms_format: '[node:field_material]|[node:field_technique_base_type]|[node:field_technique_base_colour]|[node:field_technique_structure]|[node:field_technique_base_type_desc]|[node:field_technique_effect]|[node:field_technique_density]|[node:field_technique_warp]|[node:field_technique_broche]|[node:field_technique_lance]|[node:field_technique_lisere]|[node:field_technique_metal]|[node:field_technique_riant]|[node:field_technique_couvert]|[node:field_technique_onde]|[node:field_technique_plate]|[node:field_measurements_height_cm]|[node:field_measurements_width_cm]'
+  dcterms_source: '[node:field_source]'
+  dcterms_type: '[node:field_object_type_basic]|[node:field_object_type_detailed]|[node:field_object_description]'
+  dcterms_title: '[node:title]'
+  dcterms_coverage: '[node:field_style_period]'
+  dcterms_rights: '[node:field_rights]'
+  dcterms_relation: '[node:field_relation]'
+  dcterms_date: '[node:field_date_of_creation_first]|[node:field_date_of_creation_last]|[node:field_date_of_creation_decade]|[node:field_date_of_documentation]'
+  dcterms_description: '[node:field_pattern_description_short]|[node:field_pattern_description_long]'
+  dcterms_subject: '[node:field_pattern_subject]|[node:field_pattern_subject_detailed]'
+  dcterms_identifier: '[node:field_image_refid]|[node:field_image_id]|[node:field_textref]'

@@ -1,0 +1,10 @@
+uuid: 77174f62-008c-4016-af91-dcf3e490a989
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: G4w8uzqFCblUQ6pFa1EBJtVxpBLKH9sWZX1VncabSkw
+name: Jazyk
+vid: language
+description: 'Codes to describe language of resource content. Intended for use with ISO639-2'
+weight: 8

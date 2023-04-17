@@ -1,0 +1,20 @@
+uuid: d6cf2dae-95ae-4ebd-96bd-db6432a5f11c
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.temporal_subjects
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: dlg33d7K_CnBjAljzvxsN6z_URTCpFONnT7MlRyhUR8
+id: taxonomy_term.temporal_subjects
+target_entity_type_id: taxonomy_term
+target_bundle: temporal_subjects
+default_langcode: site_default
+language_alterable: false

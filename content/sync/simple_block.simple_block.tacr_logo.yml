@@ -1,0 +1,11 @@
+uuid: b42adf46-c82b-440e-bf3b-8573263cabef
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: tacr_logo
+title: 'TAČR logo'
+content:
+  value: "<p><a href=\"https://www.tacr.cz/\"><img alt=\"TAČR logo\" src=\"/sites/default/files/logo/tacr.svg\" /></a></p>\r\n"
+  format: full_html

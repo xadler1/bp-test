@@ -1,0 +1,10 @@
+uuid: ca5bf75c-4bbe-4417-bb9a-0424674dd515
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+id: node.fabric_sort_pattern_
+label: 'Fabric sort pattern subject'
+targetEntityType: node
+cache: true

@@ -1,0 +1,23 @@
+uuid: 6e6699e5-9611-4fd1-9575-3e34f6395b1c
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file_size
+    - media.type.fabric_jpg
+id: media.fabric_jpg.field_file_size
+field_name: field_file_size
+entity_type: media
+bundle: fabric_jpg
+label: 'File size'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

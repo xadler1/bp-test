@@ -1,0 +1,20 @@
+uuid: 7af0d4ab-15c8-4ce0-aa33-5a57b3e40371
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.frequencies
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: ovbXjB8Upa3S-JWM0CW3gpDcGbAf2xcG83puKTDkS7Q
+id: taxonomy_term.frequencies
+target_entity_type_id: taxonomy_term
+target_bundle: frequencies
+default_langcode: site_default
+language_alterable: false

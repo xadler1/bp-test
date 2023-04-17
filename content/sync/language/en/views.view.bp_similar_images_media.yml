@@ -1,0 +1,19 @@
+display:
+  default:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          alter:
+            text: "Similar images (Google)\r\n"
+  block_2:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          alter:
+            text: "Similar images (this database)\r\n"
+  entity_view_2:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          alter:
+            text: 'Similar images (this database)'

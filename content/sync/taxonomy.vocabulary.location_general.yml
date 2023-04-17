@@ -1,0 +1,8 @@
+uuid: 263ac848-f31d-453b-aa73-886d8f558f73
+langcode: cs
+status: true
+dependencies: {  }
+name: Děkanát
+vid: location_general
+description: ''
+weight: -16

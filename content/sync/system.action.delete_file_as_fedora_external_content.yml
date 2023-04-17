@@ -1,0 +1,15 @@
+uuid: d5d1cad7-531e-427d-8653-9aa3ac87a348
+langcode: cs
+status: true
+dependencies:
+  module:
+    - islandora
+_core:
+  default_config_hash: mkXeO-0MzpCcCdc1TU7Zgj4KM9Bf_MxuKOikV8-qn6g
+id: delete_file_as_fedora_external_content
+label: 'Delete File as Fedora External Content'
+type: file
+plugin: emit_file_event
+configuration:
+  queue: islandora-indexing-fcrepo-delete
+  event: Smazat

@@ -1,0 +1,35 @@
+uuid: 608aff09-fa70-400f-963f-ad18970120fb
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_use
+    - media.type.fabric_tif
+    - taxonomy.vocabulary.islandora_media_use
+    - taxonomy.vocabulary.tkaniny_media_use
+  content:
+    - 'taxonomy_term:tkaniny_media_use:776dd2bb-3774-4049-8ab1-237bd1d60909'
+id: media.fabric_tif.field_media_use
+field_name: field_media_use
+entity_type: media
+bundle: fabric_tif
+label: 'Media Use'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: 776dd2bb-3774-4049-8ab1-237bd1d60909
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      islandora_media_use: islandora_media_use
+      tkaniny_media_use: tkaniny_media_use
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: islandora_media_use
+field_type: entity_reference

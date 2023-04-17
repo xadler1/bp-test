@@ -1,0 +1,31 @@
+uuid: b45c0d31-0f7b-482f-ba59-a6bdae98e81a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rights
+    - node.type.fabric
+    - taxonomy.vocabulary.rights
+id: node.fabric.field_rights
+field_name: field_rights
+entity_type: node
+bundle: fabric
+label: Licence
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: 32604cca-d3b0-42c5-9d19-2bad3ed540c5
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      rights: rights
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

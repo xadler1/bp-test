@@ -1,0 +1,13 @@
+uuid: 0fb06cdd-3cee-49dd-801c-e2855e692b44
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: t43OqwzP3CTbcAagSsWKNy6KwMm_zShXo3c4-So6rQg
+id: node_delete_action
+label: 'Smazat obsah'
+type: node
+plugin: 'entity:delete_action:node'
+configuration: {  }

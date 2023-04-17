@@ -1,0 +1,14 @@
+uuid: 690ef206-f5a4-494c-b04a-c3fc73ef6f38
+langcode: cs
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.node.fabric.fabric_tkanina
+    - core.entity_view_mode.node.fabric_tkanina
+id: tkanina
+label: Tkanina
+add_link_text: 'Přidat k porovnání'
+remove_link_text: 'Odebrat z porovnání'
+limit: 0
+entity_type: node
+bundle_type: fabric

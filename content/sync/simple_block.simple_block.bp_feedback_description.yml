@@ -1,0 +1,11 @@
+uuid: b6516b61-da42-4e00-8cce-376256a7c99a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: bp_feedback_description
+title: 'Kontaktujte nás'
+content:
+  value: "<p>Do formuláře zadejte váš dotaz, připomínku nebo nahlaste chybu. Ozveme se vám na uvedený e-mail.</p>\r\n"
+  format: basic_html

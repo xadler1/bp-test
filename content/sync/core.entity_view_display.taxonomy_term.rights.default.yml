@@ -1,0 +1,33 @@
+uuid: fe75aaf8-90d4-4ecb-b420-e395fbebe6ac
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.rights
+  module:
+    - manage_display
+    - text
+id: taxonomy_term.rights.default
+targetEntityType: taxonomy_term
+bundle: rights
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: title
+    label: hidden
+    settings:
+      linked: false
+      tag: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

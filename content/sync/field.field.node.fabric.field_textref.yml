@@ -1,0 +1,19 @@
+uuid: a812a5dd-d5dd-4fc5-ad24-ce1ccf1d58bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_textref
+    - node.type.fabric
+id: node.fabric.field_textref
+field_name: field_textref
+entity_type: node
+bundle: fabric
+label: 'Description sources'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

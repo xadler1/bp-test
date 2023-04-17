@@ -1,0 +1,20 @@
+uuid: 70f3ea02-e0f5-4c2f-a3c4-9bf8202596c4
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_psd
+id: media.fabric_psd.name
+field_name: name
+entity_type: media
+bundle: fabric_psd
+label: Name
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

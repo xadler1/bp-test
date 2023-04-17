@@ -1,0 +1,2 @@
+label: 'Linked Agent'
+description: 'Names of entities having some relationship to the resource, and, optionally, the relationship to the resource. If a relationship is not specified, it will be recorded as <a href="https://id.loc.gov/vocabulary/relators/asn.html">Associated Name</a> in the system''s linked data representation. <br /> <em>Publisher/manufacturer/distributor/etc. name is recorded here, with the appropriate relationship specified.</em>'

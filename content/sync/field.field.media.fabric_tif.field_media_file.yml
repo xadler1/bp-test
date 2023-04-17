@@ -1,0 +1,32 @@
+uuid: b44c28c5-1f16-4f22-b2b5-799441068528
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file
+    - media.type.fabric_tif
+  module:
+    - file
+    - filehash
+third_party_settings:
+  filehash:
+    dedupe: 0
+    dedupe_original: false
+id: media.fabric_tif.field_media_file
+field_name: field_media_file
+entity_type: media
+bundle: fabric_tif
+label: File
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf tif psd'
+  max_filesize: ''
+  description_field: false
+field_type: file

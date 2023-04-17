@@ -1,0 +1,49 @@
+uuid: b106803d-40fc-4268-b004-ae095b143d8a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - views.view.bp_search
+  module:
+    - context
+    - islandora
+    - views
+  theme:
+    - bartik
+id: exposedformbp_searchpage_keyword
+theme: bartik
+region: secondary_menu
+weight: -11
+provider: null
+plugin: 'views_exposed_filter_block:bp_search-page_keyword'
+settings:
+  id: 'views_exposed_filter_block:bp_search-page_keyword'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    mimetype: ''
+    negate: false
+    context_mapping: {  }

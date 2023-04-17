@@ -1,0 +1,10 @@
+uuid: e5189a9f-40a9-474c-9d45-e635bea9d148
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 099O1E0OSvJplyaB3497n9JyKTZWwwpdhte_pJ73zYM
+name: 'Issuance Mode'
+vid: issuance_modes
+description: 'Terms from Library of Congress'' MARC Issuance List vocabulary'
+weight: 7

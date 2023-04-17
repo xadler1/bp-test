@@ -1,0 +1,8 @@
+uuid: 96a42f43-a0ac-45f9-a924-f26b7a49d8e2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Tkaniny media use'
+vid: tkaniny_media_use
+description: ''
+weight: -8

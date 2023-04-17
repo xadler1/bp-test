@@ -1,0 +1,10 @@
+uuid: f264b1ea-34d5-4fd9-803c-a988eaffd230
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pVJnB7MAcLfehjyrC7yJfLKSVlZylkQvpVoAsjuCxuE
+name: Frequency
+vid: frequencies
+description: 'Terms to express publication frequency'
+weight: 1

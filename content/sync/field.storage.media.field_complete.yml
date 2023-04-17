@@ -1,0 +1,27 @@
+uuid: 380f0d05-b029-4b14-bd68-f6cba80ad73e
+langcode: cs
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - media
+  enforced:
+    module:
+      - islandora_fits
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: s4KapG1SRlURofCJ7a0e5v0oAHdtHQF2qxztNLYmuWE
+id: media.field_complete
+field_name: field_complete
+entity_type: media
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

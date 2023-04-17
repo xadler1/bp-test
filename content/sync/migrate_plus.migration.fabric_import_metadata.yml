@@ -1,0 +1,501 @@
+uuid: 8187f14b-392e-4c5f-93f9-35aff8548886
+langcode: en
+status: true
+dependencies: {  }
+id: fabric_import_metadata
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: import_fabric_metadata
+label: 'Import fabric metadata'
+source:
+  plugin: csv
+  path: /var/www/html/drupal/web/sites/default/files/metadata_import_cisty.csv
+  delimiter: ','
+  enclosure: '"'
+  header_offset: 0
+  ids:
+    - image_id
+  fields:
+    -
+      name: image_refid
+      label: 'Katalogové číslo'
+    -
+      name: date_of_documentation
+      label: Datum
+    -
+      name: image_id
+      label: 'Identifikační číslo'
+    -
+      name: title
+      label: Název
+    -
+      name: datace
+      label: Datace
+    -
+      name: object_description
+      label: 'Způsob použití'
+    -
+      name: pattern_description_long
+      label: 'Popis dekoru'
+    -
+      name: technique_structure
+      label: 'Struktura tkaniny'
+    -
+      name: technique_base_type_desc
+      label: 'Základ tkaniny'
+    -
+      name: technique_effect
+      label: 'Efekty tkaniny'
+    -
+      name: technique_density
+      label: Dostava
+    -
+      name: material
+      label: Materiál
+    -
+      name: technique_base_type
+      label: 'Technika základu'
+    -
+      name: technique_base_colour
+      label: 'Barva základu'
+    -
+      name: pattern_type
+      label: 'Okruh dekoru'
+    -
+      name: measurements_height_cm
+      label: 'Rozměr vzoru : min. výška (cm)'
+    -
+      name: measurements_width_cm
+      label: 'Rozměr vzoru : min. šířka (cm)'
+    -
+      name: technique_warp
+      label: Osnova
+    -
+      name: technique_broche
+      label: 'Broché útek'
+    -
+      name: technique_lance
+      label: 'Lancé útek'
+    -
+      name: technique_lisere
+      label: 'Liseré útek'
+    -
+      name: technique_metal
+      label: 'Pokovené nitě'
+    -
+      name: technique_riant
+      label: 'Filé riant'
+    -
+      name: technique_couvert
+      label: 'Filé couvert'
+    -
+      name: technique_onde
+      label: Ondé
+    -
+      name: technique_plate
+      label: Lamela
+    -
+      name: object_type_basic
+      label: 'Typ předmětu'
+    -
+      name: object_type_detailed
+      label: 'Typ textilie (extrakcí)'
+    -
+      name: cultural_context
+      label: 'Země původu'
+    -
+      name: pattern_description_short
+      label: 'Charakteristika dekoru'
+    -
+      name: pattern_subject
+      label: 'Motivy dekoru'
+    -
+      name: pattern_subject_detailed
+      label: 'Rostlinné motivy'
+    -
+      name: style_period
+      label: 'Stylové období'
+    -
+      name: relation
+      label: 'Souvisí s dekorem (extrakcí)'
+    -
+      name: relation_name
+      label: 'Souvisí s dekorem (extrakcí, název)'
+    -
+      name: source
+      label: 'Autor popisu'
+    -
+      name: textref
+      label: 'Odkazy na literaturu'
+    -
+      name: rights
+      label: Licence
+  constants:
+    bp_view_image: 'BP View image'
+    test_id: '1539'
+process:
+  title:
+    plugin: default_value
+    source: title
+    default_value: 'Empty title'
+  field_image_id: image_id
+  field_image_refid: image_refid
+  field_object_type_basic:
+    -
+      plugin: str_replace
+      regex: true
+      source: object_type_basic
+      search: '/; */'
+      replace: ;
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^ */'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *$/'
+      replace: ''
+    -
+      plugin: explode
+      delimiter: ;
+    -
+      plugin: entity_lookup
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_object_type_detailed:
+    -
+      plugin: str_replace
+      regex: true
+      search: '/; */'
+      replace: ;
+      source: object_type_detailed
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^ */'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *$/'
+      replace: ''
+    -
+      plugin: explode
+      delimiter: ;
+    -
+      plugin: entity_lookup
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_object_description: object_description
+  field_date_of_creation_first:
+    -
+      plugin: explode
+      source: datace
+      delimiter: –
+    -
+      plugin: extract
+      index:
+        - 0
+  field_date_of_creation_last:
+    -
+      plugin: explode
+      source: datace
+      delimiter: –
+    -
+      plugin: extract
+      index:
+        - 1
+  field_date_of_creation_decade:
+    -
+      plugin: concat
+      delimiter: ^
+      source:
+        - '@temp_datace1'
+        - '@temp_datace2'
+        - '@temp_datace3'
+        - '@temp_datace4'
+        - '@temp_datace5'
+    -
+      plugin: explode
+      delimiter: ^
+  field_material: material
+  field_technique_base_type:
+    -
+      plugin: entity_lookup
+      source: technique_base_type
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_technique_base_colour:
+    -
+      plugin: entity_lookup
+      source: technique_base_colour
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_technique_structure: technique_structure
+  field_technique_base_type_desc: technique_base_type_desc
+  field_technique_effect: technique_effect
+  field_technique_density: technique_density
+  field_technique_warp:
+    -
+      plugin: str_replace
+      regex: true
+      search: '/; */'
+      replace: ;
+      source: technique_warp
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^ */'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *$/'
+      replace: ''
+    -
+      plugin: explode
+      delimiter: ;
+    -
+      plugin: entity_lookup
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_technique_broche:
+    -
+      plugin: str_replace
+      source: technique_broche
+      search: ano
+      replace: 1
+    -
+      plugin: str_replace
+      search: ne
+      replace: 0
+  field_technique_lance:
+    -
+      plugin: str_replace
+      source: technique_lance
+      search: ano
+      replace: 1
+    -
+      plugin: str_replace
+      search: ne
+      replace: 0
+  field_technique_lisere:
+    -
+      plugin: str_replace
+      source: technique_lisere
+      search: ano
+      replace: 1
+    -
+      plugin: str_replace
+      search: ne
+      replace: 0
+  field_technique_metal:
+    -
+      plugin: str_replace
+      source: technique_metal
+      search: ano
+      replace: 1
+    -
+      plugin: str_replace
+      search: ne
+      replace: 0
+  field_technique_riant:
+    -
+      plugin: str_replace
+      source: technique_riant
+      search: ano
+      replace: 1
+    -
+      plugin: str_replace
+      search: ne
+      replace: 0
+  field_technique_couvert:
+    -
+      plugin: str_replace
+      source: technique_couvert
+      search: ano
+      replace: 1
+    -
+      plugin: str_replace
+      search: ne
+      replace: 0
+  field_technique_onde:
+    -
+      plugin: str_replace
+      source: technique_onde
+      search: ano
+      replace: 1
+    -
+      plugin: str_replace
+      search: ne
+      replace: 0
+  field_technique_plate:
+    -
+      plugin: str_replace
+      source: technique_plate
+      search: ano
+      replace: 1
+    -
+      plugin: str_replace
+      search: ne
+      replace: 0
+  field_cultural_context:
+    -
+      plugin: entity_lookup
+      source: cultural_context
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_pattern_description_short: pattern_description_short
+  field_pattern_description_long: pattern_description_long
+  field_pattern_type:
+    -
+      plugin: entity_lookup
+      source: pattern_type
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_pattern_subject:
+    -
+      plugin: str_replace
+      regex: true
+      search: '/; */'
+      replace: ;
+      source: pattern_subject
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^ */'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *$/'
+      replace: ''
+    -
+      plugin: explode
+      delimiter: ;
+    -
+      plugin: entity_lookup
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_pattern_subject_detailed:
+    -
+      plugin: str_replace
+      regex: true
+      search: '/; */'
+      replace: ;
+      source: pattern_subject_detailed
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^ */'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *$/'
+      replace: ''
+    -
+      plugin: explode
+      delimiter: ;
+    -
+      plugin: entity_lookup
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_measurements_height_cm:
+    -
+      plugin: str_replace
+      source: measurements_height_cm
+      search: ','
+      replace: .
+  field_measurements_width_cm:
+    plugin: str_replace
+    source: measurements_width_cm
+    search: ','
+    replace: .
+  field_style_period:
+    -
+      plugin: entity_lookup
+      source: style_period
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_relation:
+    -
+      plugin: str_replace
+      regex: true
+      search: '/; */'
+      replace: ;
+      source: relation
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^ */'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *$/'
+      replace: ''
+    -
+      plugin: explode
+      delimiter: ;
+    -
+      plugin: entity_lookup
+      bundle: fabric
+      entity_type: node
+      value_key: field_image_refid
+      ignore_case: true
+  field_source:
+    -
+      plugin: explode
+      source: source
+      delimiter: ORCID
+    -
+      plugin: extract
+      index:
+        - 0
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *[-]* *$/'
+      replace: ''
+  field_source_orcid:
+    -
+      plugin: explode
+      source: source
+      delimiter: ORCID
+    -
+      plugin: extract
+      index:
+        - 1
+    -
+      plugin: str_replace
+      search: ' '
+      replace: ''
+    -
+      plugin: default_value
+      default_value: ''
+  field_textref: textref
+  field_rights:
+    -
+      plugin: entity_lookup
+      source: rights
+      entity_type: taxonomy_term
+      ignore_case: true
+  field_date_of_documentation:
+    plugin: format_date
+    source: date_of_documentation
+    from_format: Y_m_d
+    to_format: Y-m-d
+  type:
+    plugin: default_value
+    default_value: fabric
+destination:
+  plugin: 'entity:node'
+  default_bundle: fabric
+migration_dependencies:
+  required:
+    - fabric_import_metadata_prep

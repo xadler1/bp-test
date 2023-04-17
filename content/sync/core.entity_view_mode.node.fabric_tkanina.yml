@@ -1,0 +1,10 @@
+uuid: 3d6c169a-89a5-40eb-bde8-8cf7f60719ed
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+id: node.fabric_tkanina
+label: Tkanina
+targetEntityType: node
+cache: true

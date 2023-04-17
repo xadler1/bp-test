@@ -1,0 +1,21 @@
+uuid: 7e5a4029-4b88-4381-bded-d4af6716e138
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_of_documentation
+    - node.type.fabric
+  module:
+    - datetime
+id: node.fabric.field_date_of_documentation
+field_name: field_date_of_documentation
+entity_type: node
+bundle: fabric
+label: 'Date of record creation'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

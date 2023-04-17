@@ -1,0 +1,8 @@
+uuid: 9ce01889-4192-43ed-9ce9-fc667f9632de
+langcode: cs
+status: true
+dependencies: {  }
+name: 'Motivy dekoru'
+vid: pattern_subject
+description: ''
+weight: -12

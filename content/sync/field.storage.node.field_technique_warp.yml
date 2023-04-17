@@ -1,0 +1,24 @@
+uuid: a3d83e60-cbe3-4407-8d2a-82a3cc082827
+langcode: cs
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_technique_warp
+field_name: field_technique_warp
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

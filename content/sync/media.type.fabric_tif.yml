@@ -1,0 +1,15 @@
+uuid: 0cc6350e-3808-43c2-98c2-935d61d3cd0e
+langcode: cs
+status: true
+dependencies: {  }
+id: fabric_tif
+label: 'Fabric tif'
+description: 'Full size tif fabric image.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name
+  filesize: field_file_size

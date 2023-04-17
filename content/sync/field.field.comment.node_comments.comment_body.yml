@@ -1,0 +1,23 @@
+uuid: b43413d2-0215-4946-82ee-91b7b83f6873
+langcode: cs
+status: true
+dependencies:
+  config:
+    - comment.type.node_comments
+    - field.storage.comment.comment_body
+  module:
+    - text
+_core:
+  default_config_hash: dWlqg_QGePh1bX60Pg3FuThe4ZKPAqEBBYStmTcBhgc
+id: comment.node_comments.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: node_comments
+label: Komentář
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

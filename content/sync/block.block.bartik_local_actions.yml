@@ -1,0 +1,47 @@
+uuid: fb33e3f7-dabd-4019-b2de-7a7d8dd5e4f3
+langcode: cs
+status: true
+dependencies:
+  module:
+    - context
+    - islandora
+  theme:
+    - bartik
+_core:
+  default_config_hash: wo-GZHJ0Eqtew07FPGRokKYkDOYoTHvmHDqtNyGd3Jk
+id: bartik_local_actions
+theme: bartik
+region: content
+weight: -16
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

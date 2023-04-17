@@ -1,0 +1,23 @@
+uuid: 310681a3-1563-4db0-959a-9b6a97da0bf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_measurements_width_cm
+    - node.type.fabric
+id: node.fabric.field_measurements_width_cm
+field_name: field_measurements_width_cm
+entity_type: node
+bundle: fabric
+label: 'Pattern width (min.)'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: "\_cm"
+field_type: float

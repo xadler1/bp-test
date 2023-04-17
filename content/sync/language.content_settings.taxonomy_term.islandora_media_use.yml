@@ -1,0 +1,20 @@
+uuid: 8093cd2c-36b0-482f-8d7e-fce6ab15101a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.islandora_media_use
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+_core:
+  default_config_hash: IcYqNobymhiOYqA31-VNlmGGX8qXXAn6LCIlPOzCGBs
+id: taxonomy_term.islandora_media_use
+target_entity_type_id: taxonomy_term
+target_bundle: islandora_media_use
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,22 @@
+uuid: 1f213a55-da0a-4955-8d1c-b7220715b747
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_beer
+id: node.migrate_example_beer.promote
+field_name: promote
+entity_type: node
+bundle: migrate_example_beer
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

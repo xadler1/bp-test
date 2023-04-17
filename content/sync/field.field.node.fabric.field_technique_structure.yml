@@ -1,0 +1,19 @@
+uuid: eee04b80-fb9f-4a49-ac8a-b3c23e672ee1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_structure
+    - node.type.fabric
+id: node.fabric.field_technique_structure
+field_name: field_technique_structure
+entity_type: node
+bundle: fabric
+label: 'Fabric structure'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

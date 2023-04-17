@@ -1,0 +1,22 @@
+uuid: 62b7adb1-947c-4144-9e90-92f5e0905986
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_beer
+id: node.migrate_example_beer.status
+field_name: status
+entity_type: node
+bundle: migrate_example_beer
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

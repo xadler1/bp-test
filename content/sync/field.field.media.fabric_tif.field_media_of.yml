@@ -1,0 +1,29 @@
+uuid: 26a7992e-35ab-453f-9a84-0fae8bb8ab54
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_of
+    - media.type.fabric_tif
+    - node.type.fabric
+id: media.fabric_tif.field_media_of
+field_name: field_media_of
+entity_type: media
+bundle: fabric_tif
+label: 'Media of'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      fabric: fabric
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

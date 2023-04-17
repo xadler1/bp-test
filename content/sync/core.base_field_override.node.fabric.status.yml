@@ -1,0 +1,22 @@
+uuid: e80e7022-0da4-4d97-9753-8232e77c9d3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.fabric
+id: node.fabric.status
+field_name: status
+entity_type: node
+bundle: fabric
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

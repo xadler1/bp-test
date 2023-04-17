@@ -1,0 +1,18 @@
+uuid: e0ababac-1d47-47e5-a470-7d234cb1197e
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_png
+id: media.fabric_png.changed
+field_name: changed
+entity_type: media
+bundle: fabric_png
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

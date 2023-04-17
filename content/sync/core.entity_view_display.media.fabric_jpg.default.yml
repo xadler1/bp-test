@@ -1,0 +1,67 @@
+uuid: 7ee3942b-f64a-4886-8639-165e6a632870
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.field.media.fabric_jpg.field_file_size
+    - field.field.media.fabric_jpg.field_media_image
+    - field.field.media.fabric_jpg.field_media_of
+    - field.field.media.fabric_jpg.field_media_use
+    - image.style.large
+    - media.type.fabric_jpg
+  module:
+    - image
+id: media.fabric_jpg.default
+targetEntityType: media
+bundle: fabric_jpg
+mode: default
+content:
+  fabric_image_download_link_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_file_size:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_media_of:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_use:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  created: true
+  fabric_image_download_link_entity_view_2: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

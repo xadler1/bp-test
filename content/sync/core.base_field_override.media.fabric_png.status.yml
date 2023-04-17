@@ -1,0 +1,22 @@
+uuid: 6966da94-275f-466b-bebc-c5308c20b856
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_png
+id: media.fabric_png.status
+field_name: status
+entity_type: media
+bundle: fabric_png
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,33 @@
+uuid: 02ee16da-56ce-49f4-9dc2-6e61a1f3dcab
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pattern_type
+  module:
+    - manage_display
+    - text
+id: taxonomy_term.pattern_type.default
+targetEntityType: taxonomy_term
+bundle: pattern_type
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: title
+    label: hidden
+    settings:
+      linked: false
+      tag: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

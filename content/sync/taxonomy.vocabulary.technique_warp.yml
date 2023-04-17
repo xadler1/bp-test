@@ -1,0 +1,8 @@
+uuid: 4a9cd6cd-86e2-4928-b80d-db0543c08016
+langcode: cs
+status: true
+dependencies: {  }
+name: 'Typ osnovy'
+vid: technique_warp
+description: ''
+weight: -6

@@ -1,0 +1,20 @@
+uuid: 88a8f79b-a0ca-4f6b-a111-858d8b7354d1
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_beer
+  module:
+    - path
+id: node.migrate_example_beer.path
+field_name: path
+entity_type: node
+bundle: migrate_example_beer
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

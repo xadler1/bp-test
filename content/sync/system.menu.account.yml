@@ -1,0 +1,10 @@
+uuid: 097983eb-4b86-42a9-98d0-10aa9ac28f44
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M_Bh81osDyUQ4wV0GgU_NdBNqkzM87sLxjaCdFj9mnw
+id: account
+label: 'Menu uživatelského účtu'
+description: 'Odkazy týkající se aktivního uživatelského účtu'
+locked: true

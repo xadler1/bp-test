@@ -1,0 +1,24 @@
+uuid: ca01c840-1481-41da-9d8b-7be530b7726d
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.islandora_object
+  enforced:
+    module:
+      - islandora_defaults
+_core:
+  default_config_hash: 45Ooobxf-P9ggXWsF5nCo2gvhlbqHwA-GnnTM97CzOc
+id: node.islandora_object.field_description
+field_name: field_description
+entity_type: node
+bundle: islandora_object
+label: Popis
+description: 'Description of the resource. Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,54 @@
+uuid: adcbdef7-3ac3-4a5e-ab31-ffd69376c406
+langcode: cs
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.bp_move_result_summary
+  module:
+    - context
+    - islandora
+    - simple_block
+  theme:
+    - islandora_muni
+id: islandora_muni_bpmoveresultsummary
+theme: islandora_muni
+region: footer_first
+weight: -14
+provider: null
+plugin: 'simple_block:bp_move_result_summary'
+settings:
+  id: 'simple_block:bp_move_result_summary'
+  label: 'BP move result summary'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-bp_homepage-page_4: view-bp_homepage-page_4
+      view-bp_search-page_6: view-bp_search-page_6
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

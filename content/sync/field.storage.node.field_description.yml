@@ -1,0 +1,24 @@
+uuid: 122e44df-5e8f-40a2-9fee-c25fa2ccd691
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - islandora
+_core:
+  default_config_hash: 8cYoje9ObIxX1k3ffRc-tWuu3hcddJzy3EHCPlq8JPI
+id: node.field_description
+field_name: field_description
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

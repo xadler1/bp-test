@@ -1,0 +1,18 @@
+uuid: 34731ac8-8b46-439f-acfa-09ffd8292897
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_beer
+id: node.migrate_example_beer.created
+field_name: created
+entity_type: node
+bundle: migrate_example_beer
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

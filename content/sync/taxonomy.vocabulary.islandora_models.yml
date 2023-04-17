@@ -1,0 +1,10 @@
+uuid: 8bc50fcd-515a-4b7d-9425-214c7665e08f
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NqoIlPmdlM_yTGM0Ze7b8NuFkX-xF9m-YKgx4o3nmSQ
+name: 'Islandora Models'
+vid: islandora_models
+description: 'Types of repository objects'
+weight: 6

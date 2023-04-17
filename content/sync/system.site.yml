@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: cs
+uuid: 25f39b7b-9bfe-443c-836d-8abfb955f382
+name: 'Vzory krásy'
+mail: 469190@mail.muni.cz
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /homepage
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: cs
+mail_notification: ''

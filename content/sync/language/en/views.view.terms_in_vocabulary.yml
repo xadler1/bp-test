@@ -1,0 +1,26 @@
+label: 'Terms in vocabulary'
+description: 'REST output of all the terms in a vocabulary, from a request like http://localhost:8000/vocabulary/{vid}?_format=json. Used by Islandora Workbench.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        name:
+          separator: ', '
+      filters:
+        vid:
+          expose:
+            label: Vocabulary
+      arguments:
+        vid:
+          exception:
+            title: All
+  rest_export_1:
+    display_title: 'REST export'

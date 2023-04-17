@@ -1,0 +1,18 @@
+uuid: 84824df7-36d4-483b-9857-5b8d9c02e711
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_tif
+id: media.fabric_tif.changed
+field_name: changed
+entity_type: media
+bundle: fabric_tif
+label: Changed
+description: 'The time the media item was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

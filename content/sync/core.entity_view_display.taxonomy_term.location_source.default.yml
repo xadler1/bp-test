@@ -1,0 +1,33 @@
+uuid: aa2b1840-7de6-46ea-97f0-ab72fea1ed48
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.location_source
+  module:
+    - manage_display
+    - text
+id: taxonomy_term.location_source.default
+targetEntityType: taxonomy_term
+bundle: location_source
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: title
+    label: hidden
+    settings:
+      linked: false
+      tag: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

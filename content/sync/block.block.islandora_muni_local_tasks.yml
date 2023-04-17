@@ -1,0 +1,49 @@
+uuid: 7af544c7-2b25-43e0-bf28-f5f18f05ccb5
+langcode: cs
+status: true
+dependencies:
+  module:
+    - context
+    - islandora
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: 4QzgKElJKiM5Hn8afHMGjyQgEoA3tQYTnrEljQgnm18
+id: islandora_muni_local_tasks
+theme: islandora_muni
+region: content
+weight: -17
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

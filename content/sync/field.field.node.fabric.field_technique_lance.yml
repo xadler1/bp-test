@@ -1,0 +1,23 @@
+uuid: 1c2aecdc-ccb7-42d8-89dd-453447000875
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_lance
+    - node.type.fabric
+id: node.fabric.field_technique_lance
+field_name: field_technique_lance
+entity_type: node
+bundle: fabric
+label: 'Lancé weft'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

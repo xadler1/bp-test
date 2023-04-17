@@ -1,0 +1,23 @@
+uuid: 6aebb4fc-e9e9-43eb-a3b7-ddbd945bbe5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_measurements_height_cm
+    - node.type.fabric
+id: node.fabric.field_measurements_height_cm
+field_name: field_measurements_height_cm
+entity_type: node
+bundle: fabric
+label: 'Pattern height (min.)'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: "\_cm"
+field_type: float

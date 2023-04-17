@@ -1,0 +1,29 @@
+uuid: a619167e-5adc-4320-a413-5b0ce3af111f
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_base_type
+    - node.type.fabric
+    - taxonomy.vocabulary.technique_base_type
+id: node.fabric.field_technique_base_type
+field_name: field_technique_base_type
+entity_type: node
+bundle: fabric
+label: 'Technika základu'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      technique_base_type: technique_base_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

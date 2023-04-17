@@ -1,0 +1,11 @@
+uuid: 040ae204-b057-4e87-a3de-5e1b2f43593d
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: bp_calculate_position_taxonomy
+title: "BP\_calculate position taxonomy"
+content:
+  value: "<script>\r\nvar results_per_page = 40;\r\n\r\nvar separator = \"?\";\r\n\r\n// The block is used for both homepage and search page, both are redirected to search/paged\r\nvar paged_search_url = location.pathname.replace(\"homepage\", \"search\") + \"/paged\" + separator + \"page=\";\r\n\r\nvar params = new URLSearchParams(location.search);\r\nvar page_number = params.get(\"page\");\r\nvar link;\r\n\r\nif (page_number == null) {\r\n    page_number = 0;\r\n}\r\n\r\nvar taxonomy_page = document.getElementsByClassName('region-content')[0];\r\nvar taxonomy_results = taxonomy_page.getElementsByClassName('view-content')[0];\r\nvar grid_sections = taxonomy_results.getElementsByClassName('views-view-grid');\r\n\r\nvar items;\r\nvar tags;\r\nvar counter = 0;\r\n\r\nfor (i = 0; i < grid_sections.length; i++) {\r\n    items = grid_sections[i].getElementsByClassName('views-col');\r\n\r\n    for (j = 0; j <\_items.length; j++) {\r\n        link = paged_search_url + (page_number * results_per_page + counter);\r\n        tags = items[j].getElementsByClassName('field-content');\r\n        for (k = 0; k <\_tags.length; k++) {\r\n                //document.write(tags[k].children[0]);\r\n                tags[k].children[0].href=link;\r\n        }\r\n\r\n        counter += 1;\r\n    }\r\n}\r\n</script>"
+  format: full_html

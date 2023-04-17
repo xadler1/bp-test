@@ -1,0 +1,16 @@
+uuid: 8bdae78d-456c-40cc-be38-0b158be7344d
+langcode: cs
+status: true
+dependencies:
+  enforced:
+    module:
+      - migrate_example_setup
+_core:
+  default_config_hash: XTZYKZ67xZSAOxGq4yYC2BeOQlF7l-vHyGuQduB7YLA
+name: Beer
+type: migrate_example_beer
+description: 'Beer is what we drink.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

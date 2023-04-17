@@ -1,0 +1,22 @@
+uuid: 280ab070-1bfa-441b-b243-71dabf06c6e5
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_tif
+id: media.fabric_tif.status
+field_name: status
+entity_type: media
+bundle: fabric_tif
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

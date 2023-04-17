@@ -1,0 +1,7 @@
+display:
+  default:
+    display_options:
+      fields:
+        created:
+          alter:
+            text: 'Vytvořeno uživatelem {{ uid }}, {{ created }}'

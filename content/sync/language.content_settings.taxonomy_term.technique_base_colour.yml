@@ -1,0 +1,18 @@
+uuid: 1c0ccd1c-522a-450c-8327-65f811f9059c
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.technique_base_colour
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.technique_base_colour
+target_entity_type_id: taxonomy_term
+target_bundle: technique_base_colour
+default_langcode: cs
+language_alterable: false

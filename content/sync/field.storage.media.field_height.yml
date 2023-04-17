@@ -1,0 +1,25 @@
+uuid: bd6ec111-7d67-48c1-af4a-5cac3a52ec03
+langcode: cs
+status: true
+dependencies:
+  module:
+    - media
+  enforced:
+    module:
+      - islandora_core_feature
+_core:
+  default_config_hash: Px3XXVJbHRnXONsekdr0c4_ZbfiwtElQTJbtR-zwsm8
+id: media.field_height
+field_name: field_height
+entity_type: media
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

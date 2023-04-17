@@ -1,0 +1,19 @@
+uuid: 272d202c-0142-429b-800c-338793286714
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_density
+    - node.type.fabric
+id: node.fabric.field_technique_density
+field_name: field_technique_density
+entity_type: node
+bundle: fabric
+label: Complement
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

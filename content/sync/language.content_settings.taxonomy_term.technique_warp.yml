@@ -1,0 +1,18 @@
+uuid: 39ac80a9-6d4b-4aaf-b888-b95bb4dcc157
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.technique_warp
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.technique_warp
+target_entity_type_id: taxonomy_term
+target_bundle: technique_warp
+default_langcode: cs
+language_alterable: false

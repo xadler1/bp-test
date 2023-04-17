@@ -1,0 +1,23 @@
+uuid: 450d6bc9-0796-498c-94c9-8a90c1e74b3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_broche
+    - node.type.fabric
+id: node.fabric.field_technique_broche
+field_name: field_technique_broche
+entity_type: node
+bundle: fabric
+label: 'Broché weft'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

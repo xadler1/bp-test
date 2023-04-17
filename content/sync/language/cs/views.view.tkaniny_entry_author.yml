@@ -1,0 +1,8 @@
+label: 'Tkaniny autor digitálního záznamu'
+display:
+  default:
+    display_options:
+      fields:
+        created:
+          alter:
+            text: 'Vytvořil {{ uid }}, {{ created }}'

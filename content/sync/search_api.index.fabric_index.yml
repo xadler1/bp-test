@@ -1,0 +1,562 @@
+uuid: 1975f3c8-30c1-4c85-9328-22425555c4a1
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source
+    - field.storage.node.field_technique_base_colour
+    - field.storage.node.field_technique_broche
+    - field.storage.node.field_pattern_description_short
+    - field.storage.node.field_technique_density
+    - field.storage.node.field_technique_effect
+    - field.storage.node.field_technique_couvert
+    - field.storage.node.field_technique_riant
+    - field.storage.node.field_image_id
+    - field.storage.node.field_image_refid
+    - field.storage.node.field_technique_plate
+    - field.storage.node.field_technique_lance
+    - field.storage.node.field_rights
+    - field.storage.node.field_technique_lisere
+    - field.storage.node.field_material
+    - field.storage.node.field_pattern_subject
+    - field.storage.node.field_date_of_creation_decade
+    - field.storage.node.field_technique_onde
+    - field.storage.node.field_source_orcid
+    - field.storage.node.field_pinterest_pin
+    - field.storage.node.field_technique_metal
+    - field.storage.node.field_pattern_description_long
+    - field.storage.node.field_textref
+    - field.storage.node.field_pattern_subject_detailed
+    - field.storage.node.field_relation
+    - field.storage.node.field_technique_structure
+    - field.storage.node.field_style_period
+    - field.storage.node.field_technique_base_type
+    - field.storage.node.field_pattern_type
+    - field.storage.node.field_technique_warp
+    - field.storage.node.field_object_type_basic
+    - field.storage.node.field_object_type_detailed
+    - field.storage.node.field_date_of_creation_last
+    - field.storage.node.field_date_of_creation_first
+    - field.storage.node.field_measurements_height_cm
+    - field.storage.node.field_cultural_context
+    - field.storage.node.field_object_description
+    - field.storage.node.field_technique_base_type_desc
+    - field.storage.node.field_date_of_documentation
+    - field.storage.node.field_measurements_width_cm
+    - search_api.server.default_solr_server
+    - core.entity_view_mode.node.fabric_image_refid
+    - core.entity_view_mode.node.search_index
+  module:
+    - search_api_solr
+    - node
+    - taxonomy
+    - search_api
+third_party_settings:
+  search_api_solr:
+    finalize: false
+    commit_before_finalize: false
+    commit_after_finalize: false
+    debug_finalize: false
+    highlighter:
+      maxAnalyzedChars: 51200
+      fragmenter: gap
+      usePhraseHighlighter: true
+      highlightMultiTerm: true
+      preserveMulti: false
+      regex:
+        slop: 0.5
+        pattern: blank
+        maxAnalyzedChars: 10000
+      highlight:
+        mergeContiguous: false
+        requireFieldMatch: false
+        snippets: 3
+        fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
+    advanced:
+      index_prefix: ''
+      collection: ''
+      timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
+      specific_languages: {  }
+      use_language_undefined_as_fallback_language: false
+      use_universal_collation: false
+id: fabric_index
+name: 'Fabric index'
+description: ''
+read_only: false
+field_settings:
+  date_of_creation_first_last:
+    label: 'Year from to'
+    property_path: aggregated_field
+    type: string
+    configuration:
+      type: concat
+      fields:
+        - 'entity:node/field_date_of_creation_first'
+        - 'entity:node/field_date_of_creation_last'
+  field_cultural_context:
+    label: 'Země původu'
+    datasource_id: 'entity:node'
+    property_path: field_cultural_context
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_cultural_context
+  field_date_of_creation_decade:
+    label: Období
+    datasource_id: 'entity:node'
+    property_path: field_date_of_creation_decade
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_date_of_creation_decade
+  field_date_of_creation_first:
+    label: 'Vznik od'
+    datasource_id: 'entity:node'
+    property_path: field_date_of_creation_first
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_date_of_creation_first
+  field_date_of_creation_last:
+    label: 'Vznik do'
+    datasource_id: 'entity:node'
+    property_path: field_date_of_creation_last
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_date_of_creation_last
+  field_date_of_documentation:
+    label: 'Záznam vytvořen'
+    datasource_id: 'entity:node'
+    property_path: field_date_of_documentation
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_date_of_documentation
+  field_image_id:
+    label: 'Identifikační číslo'
+    datasource_id: 'entity:node'
+    property_path: field_image_id
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_image_id
+  field_image_refid:
+    label: 'Katalogové číslo'
+    datasource_id: 'entity:node'
+    property_path: field_image_refid
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_image_refid
+  field_material:
+    label: Materiál
+    datasource_id: 'entity:node'
+    property_path: field_material
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_material
+  field_measurements_height_cm:
+    label: 'Výška dekoru (min.)'
+    datasource_id: 'entity:node'
+    property_path: field_measurements_height_cm
+    type: decimal
+    dependencies:
+      config:
+        - field.storage.node.field_measurements_height_cm
+  field_measurements_width_cm:
+    label: 'Šířka dekoru (min.)'
+    datasource_id: 'entity:node'
+    property_path: field_measurements_width_cm
+    type: decimal
+    dependencies:
+      config:
+        - field.storage.node.field_measurements_width_cm
+  field_object_description:
+    label: 'Způsob použití'
+    datasource_id: 'entity:node'
+    property_path: field_object_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_object_description
+  field_object_type_basic:
+    label: 'Typ předmětu'
+    datasource_id: 'entity:node'
+    property_path: field_object_type_basic
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_object_type_basic
+  field_object_type_detailed:
+    label: 'Typ textilie ID'
+    datasource_id: 'entity:node'
+    property_path: field_object_type_detailed
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_object_type_detailed
+  field_object_type_detailed_name:
+    label: 'Typ textilie'
+    datasource_id: 'entity:node'
+    property_path: 'field_object_type_detailed:entity:name'
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.field_object_type_detailed
+      module:
+        - taxonomy
+  field_pattern_description_long:
+    label: 'Popis dekoru'
+    datasource_id: 'entity:node'
+    property_path: field_pattern_description_long
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_pattern_description_long
+  field_pattern_description_short:
+    label: 'Charakteristika dekoru'
+    datasource_id: 'entity:node'
+    property_path: field_pattern_description_short
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_pattern_description_short
+  field_pattern_subject:
+    label: 'Motivy dekoru ID'
+    datasource_id: 'entity:node'
+    property_path: field_pattern_subject
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_pattern_subject
+  field_pattern_subject_detailed:
+    label: 'Rostlinné motivy'
+    datasource_id: 'entity:node'
+    property_path: field_pattern_subject_detailed
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_pattern_subject_detailed
+  field_pattern_subject_name:
+    label: 'Motivy dekoru'
+    datasource_id: 'entity:node'
+    property_path: 'field_pattern_subject:entity:name'
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.field_pattern_subject
+      module:
+        - taxonomy
+  field_pattern_type:
+    label: 'Typ dekoru'
+    datasource_id: 'entity:node'
+    property_path: field_pattern_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_pattern_type
+  field_pinterest_pin:
+    label: 'Pinterest pin'
+    datasource_id: 'entity:node'
+    property_path: field_pinterest_pin
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_pinterest_pin
+  field_relation:
+    label: 'Souvisí s dekorem'
+    datasource_id: 'entity:node'
+    property_path: field_relation
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_relation
+  field_rights:
+    label: Licence
+    datasource_id: 'entity:node'
+    property_path: field_rights
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_rights
+  field_source:
+    label: 'Autor popisu'
+    datasource_id: 'entity:node'
+    property_path: field_source
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_source
+  field_source_orcid:
+    label: ORCID
+    datasource_id: 'entity:node'
+    property_path: field_source_orcid
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_source_orcid
+  field_style_period:
+    label: 'Stylové období'
+    datasource_id: 'entity:node'
+    property_path: field_style_period
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_style_period
+  field_technique_base_colour:
+    label: 'Barva základu'
+    datasource_id: 'entity:node'
+    property_path: field_technique_base_colour
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_technique_base_colour
+  field_technique_base_type:
+    label: 'Technika základu ID'
+    datasource_id: 'entity:node'
+    property_path: field_technique_base_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_technique_base_type
+  field_technique_base_type_desc:
+    label: 'Základ tkaniny'
+    datasource_id: 'entity:node'
+    property_path: field_technique_base_type_desc
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_technique_base_type_desc
+  field_technique_base_type_name:
+    label: 'Technika základu'
+    datasource_id: 'entity:node'
+    property_path: 'field_technique_base_type:entity:name'
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      config:
+        - field.storage.node.field_technique_base_type
+      module:
+        - taxonomy
+  field_technique_broche:
+    label: 'Broché útek'
+    datasource_id: 'entity:node'
+    property_path: field_technique_broche
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_technique_broche
+  field_technique_couvert:
+    label: 'Filé couvert'
+    datasource_id: 'entity:node'
+    property_path: field_technique_couvert
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_technique_couvert
+  field_technique_density:
+    label: Dostava
+    datasource_id: 'entity:node'
+    property_path: field_technique_density
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_technique_density
+  field_technique_effect:
+    label: 'Efekty tkaniny'
+    datasource_id: 'entity:node'
+    property_path: field_technique_effect
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_technique_effect
+  field_technique_lance:
+    label: 'Lancé útek'
+    datasource_id: 'entity:node'
+    property_path: field_technique_lance
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_technique_lance
+  field_technique_lisere:
+    label: 'Liseré útek'
+    datasource_id: 'entity:node'
+    property_path: field_technique_lisere
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_technique_lisere
+  field_technique_metal:
+    label: 'Pokovené nitě'
+    datasource_id: 'entity:node'
+    property_path: field_technique_metal
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_technique_metal
+  field_technique_onde:
+    label: Ondé
+    datasource_id: 'entity:node'
+    property_path: field_technique_onde
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_technique_onde
+  field_technique_plate:
+    label: Lamela
+    datasource_id: 'entity:node'
+    property_path: field_technique_plate
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_technique_plate
+  field_technique_riant:
+    label: 'Filé riant'
+    datasource_id: 'entity:node'
+    property_path: field_technique_riant
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_technique_riant
+  field_technique_structure:
+    label: 'Struktura tkaniny'
+    datasource_id: 'entity:node'
+    property_path: field_technique_structure
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_technique_structure
+  field_technique_warp:
+    label: 'Typ osnovy'
+    datasource_id: 'entity:node'
+    property_path: field_technique_warp
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_technique_warp
+  field_textref:
+    label: 'Prameny popisu'
+    datasource_id: 'entity:node'
+    property_path: field_textref
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_textref
+  name_1:
+    label: 'Motivy dekoru » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_pattern_subject:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_pattern_subject
+      module:
+        - taxonomy
+  rendered_item_image_refid:
+    label: 'Catalogue number without leading zeroes'
+    property_path: rendered_item
+    type: string
+    configuration:
+      roles:
+        - anonymous
+      view_mode:
+        'entity:node':
+          fabric: fabric_image_refid
+  rendered_item_metadata:
+    label: 'Keyword (metadata)'
+    property_path: rendered_item
+    type: 'solr_text_custom:ngram'
+    configuration:
+      roles:
+        - anonymous
+      view_mode:
+        'entity:node':
+          fabric: search_index
+  status:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  tid_1:
+    label: 'Motivy dekoru » Taxonomy term » Term ID'
+    datasource_id: 'entity:node'
+    property_path: 'field_pattern_subject:entity:tid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_pattern_subject
+      module:
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: 'solr_text_custom:ngram'
+    dependencies:
+      module:
+        - node
+  title_string:
+    label: 'Title string'
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  type:
+    label: 'Content type'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - fabric
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  auto_aggregated_fulltext_field: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  reverse_entity_references: {  }
+  solr_date_range:
+    weights:
+      preprocess_index: 0
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: default_solr_server

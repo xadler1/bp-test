@@ -1,0 +1,19 @@
+uuid: 433a666b-7c49-4cf3-804b-ea15a0ceedf8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_effect
+    - node.type.fabric
+id: node.fabric.field_technique_effect
+field_name: field_technique_effect
+entity_type: node
+bundle: fabric
+label: 'Fabric effects'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

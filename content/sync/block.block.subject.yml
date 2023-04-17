@@ -1,0 +1,31 @@
+uuid: fcb648da-b336-449c-b88e-a6a993f4cf76
+langcode: cs
+status: false
+dependencies:
+  config:
+    - facets.facet.subject
+  module:
+    - facets
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: 8CNTurKBSOQZRTrWiaCmfAwseQyzXZOb8gJohUvIBFw
+id: subject
+theme: bartik
+region: header
+weight: -3
+provider: null
+plugin: 'facet_block:subject'
+settings:
+  id: 'facet_block:subject'
+  label: Předmět
+  label_display: visible
+  provider: facets
+  block_id: subject
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /solr-search/content

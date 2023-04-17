@@ -1,0 +1,18 @@
+uuid: 0c3cea91-5b95-4bf3-a4d2-22f74130b10a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_jpg
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: media.fabric_jpg
+target_entity_type_id: media
+target_bundle: fabric_jpg
+default_langcode: site_default
+language_alterable: true

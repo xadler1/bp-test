@@ -1,0 +1,23 @@
+uuid: 8ba1d10a-169e-463b-8a7c-fc5621c07a27
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file_size
+    - media.type.fabric_tif
+id: media.fabric_tif.field_file_size
+field_name: field_file_size
+entity_type: media
+bundle: fabric_tif
+label: 'File size'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

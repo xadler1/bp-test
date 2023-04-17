@@ -1,0 +1,20 @@
+uuid: 332c016d-6544-4d0d-93fa-c766a70e81f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.fits_technical_metadata
+id: media.fits_technical_metadata.name
+field_name: name
+entity_type: media
+bundle: fits_technical_metadata
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

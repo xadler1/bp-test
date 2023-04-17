@@ -1,0 +1,23 @@
+uuid: a17e48e7-5588-4c2e-8305-36371312a3e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_onde
+    - node.type.fabric
+id: node.fabric.field_technique_onde
+field_name: field_technique_onde
+entity_type: node
+bundle: fabric
+label: Ondé
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,28 @@
+display:
+  page_4:
+    display_options:
+      menu:
+        title: Prohlížení
+      exposed_form:
+        options:
+          submit_button: Zobrazit
+          reset_button_label: 'Vymazat filtry'
+          exposed_sorts_label: 'Seřadit podle'
+          sort_asc_label: Vzestupně
+          sort_desc_label: Sestupně
+      sorts:
+        date_of_creation_first_last:
+          expose:
+            label: Období
+        field_object_type_detailed_name:
+          expose:
+            label: 'Typ textilie'
+        field_technique_base_type_name:
+          expose:
+            label: 'Technika základu'
+        field_pattern_subject_name:
+          expose:
+            label: 'Motivy dekoru'
+      header:
+        result:
+          content: 'Zobrazeno @start - @end z @total'

@@ -1,0 +1,33 @@
+uuid: 217ded91-0dc4-45e5-a600-2b01b6d90802
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.zeme_puvodu
+  module:
+    - manage_display
+    - text
+id: taxonomy_term.zeme_puvodu.default
+targetEntityType: taxonomy_term
+bundle: zeme_puvodu
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: title
+    label: hidden
+    settings:
+      linked: false
+      tag: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

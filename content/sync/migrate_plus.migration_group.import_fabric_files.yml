@@ -1,0 +1,10 @@
+uuid: e3dc1a63-52b4-4e2e-b069-ae72de866cfc
+langcode: cs
+status: true
+dependencies: {  }
+id: import_fabric_files
+label: 'Import fabric files'
+description: 'Migrations for jpg, png, psd and tif files'
+source_type: csv
+module: null
+shared_configuration: null

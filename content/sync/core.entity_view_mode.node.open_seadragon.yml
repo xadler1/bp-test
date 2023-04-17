@@ -1,0 +1,15 @@
+uuid: 9ef75e83-f583-4cbe-94f6-b6a7db9dc515
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - islandora_defaults
+_core:
+  default_config_hash: 3gngsdemEmmFuj-H0Jo-6M8jGLvV7KErOZY44fxBhU0
+id: node.open_seadragon
+label: 'Open Seadragon'
+targetEntityType: node
+cache: true

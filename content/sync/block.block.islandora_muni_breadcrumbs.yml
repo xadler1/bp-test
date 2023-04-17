@@ -1,0 +1,27 @@
+uuid: 7eb63c15-c982-4ad0-adf7-bebb61e4e10b
+langcode: cs
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: FW6GK-IEpW_hY-HCHX_W91L22EiEawSU_uACVpPjTBs
+id: islandora_muni_breadcrumbs
+theme: islandora_muni
+region: header
+weight: -9
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

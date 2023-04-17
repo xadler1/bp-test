@@ -1,0 +1,18 @@
+uuid: 187a8b7c-c051-4084-89b5-573f7fd8e4ac
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_beer
+id: node.migrate_example_beer.changed
+field_name: changed
+entity_type: node
+bundle: migrate_example_beer
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

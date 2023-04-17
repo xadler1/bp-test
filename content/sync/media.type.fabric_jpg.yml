@@ -1,0 +1,15 @@
+uuid: 6dd957f7-8755-4e94-89c6-5d649f391c43
+langcode: cs
+status: true
+dependencies: {  }
+id: fabric_jpg
+label: 'Fabric jpg'
+description: 'Full size jpg fabric image.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name
+  filesize: field_file_size

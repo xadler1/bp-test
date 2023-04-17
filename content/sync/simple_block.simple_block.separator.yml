@@ -1,0 +1,11 @@
+uuid: 3e7f862f-7744-4884-ab6d-3e133d742f5a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: separator
+title: Separator
+content:
+  value: '<div id="line-separator" />'
+  format: full_html

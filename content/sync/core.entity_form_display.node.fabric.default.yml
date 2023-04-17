@@ -1,0 +1,511 @@
+uuid: 96c4b50a-6713-4cd6-88f2-5a3787d94591
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fabric.field_cultural_context
+    - field.field.node.fabric.field_date_of_creation_decade
+    - field.field.node.fabric.field_date_of_creation_first
+    - field.field.node.fabric.field_date_of_creation_last
+    - field.field.node.fabric.field_date_of_documentation
+    - field.field.node.fabric.field_image_id
+    - field.field.node.fabric.field_image_refid
+    - field.field.node.fabric.field_material
+    - field.field.node.fabric.field_measurements_height_cm
+    - field.field.node.fabric.field_measurements_width_cm
+    - field.field.node.fabric.field_member_of
+    - field.field.node.fabric.field_object_description
+    - field.field.node.fabric.field_object_type_basic
+    - field.field.node.fabric.field_object_type_detailed
+    - field.field.node.fabric.field_pattern_description_long
+    - field.field.node.fabric.field_pattern_description_short
+    - field.field.node.fabric.field_pattern_subject
+    - field.field.node.fabric.field_pattern_subject_detailed
+    - field.field.node.fabric.field_pattern_type
+    - field.field.node.fabric.field_pinterest_pin
+    - field.field.node.fabric.field_reference_date_range
+    - field.field.node.fabric.field_reference_download_links
+    - field.field.node.fabric.field_reference_entry_author
+    - field.field.node.fabric.field_reference_orcid_with_link
+    - field.field.node.fabric.field_reference_view_image
+    - field.field.node.fabric.field_relation
+    - field.field.node.fabric.field_rights
+    - field.field.node.fabric.field_source
+    - field.field.node.fabric.field_source_orcid
+    - field.field.node.fabric.field_style_period
+    - field.field.node.fabric.field_technique_base_colour
+    - field.field.node.fabric.field_technique_base_type
+    - field.field.node.fabric.field_technique_base_type_desc
+    - field.field.node.fabric.field_technique_broche
+    - field.field.node.fabric.field_technique_couvert
+    - field.field.node.fabric.field_technique_density
+    - field.field.node.fabric.field_technique_effect
+    - field.field.node.fabric.field_technique_lance
+    - field.field.node.fabric.field_technique_lisere
+    - field.field.node.fabric.field_technique_metal
+    - field.field.node.fabric.field_technique_onde
+    - field.field.node.fabric.field_technique_plate
+    - field.field.node.fabric.field_technique_riant
+    - field.field.node.fabric.field_technique_structure
+    - field.field.node.fabric.field_technique_warp
+    - field.field.node.fabric.field_test_viewfield
+    - field.field.node.fabric.field_textref
+    - node.type.fabric
+  module:
+    - controlled_access_terms
+    - datetime
+    - field_group
+    - path
+    - viewfield
+third_party_settings:
+  field_group:
+    group_advanced:
+      children:
+        - field_reference_view_image
+        - field_reference_orcid_with_link
+        - field_reference_date_range
+        - field_reference_download_links
+        - field_reference_entry_author
+        - field_test_viewfield
+      label: Advanced
+      region: content
+      parent_name: ''
+      weight: 49
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+        weight: 0
+id: node.fabric.default
+targetEntityType: node
+bundle: fabric
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_cultural_context:
+    type: entity_reference_autocomplete
+    weight: 45
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_date_of_creation_decade:
+    type: edtf_default
+    weight: 13
+    region: content
+    settings:
+      strict_dates: false
+      intervals: true
+      sets: false
+    third_party_settings: {  }
+  field_date_of_creation_first:
+    type: number
+    weight: 11
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_date_of_creation_last:
+    type: number
+    weight: 12
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_date_of_documentation:
+    type: datetime_default
+    weight: 35
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image_id:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image_refid:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_material:
+    type: string_textarea
+    weight: 14
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_measurements_height_cm:
+    type: number
+    weight: 29
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_measurements_width_cm:
+    type: number
+    weight: 30
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_object_description:
+    type: string_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_object_type_basic:
+    type: entity_reference_autocomplete
+    weight: 43
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_object_type_detailed:
+    type: entity_reference_autocomplete
+    weight: 44
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pattern_description_long:
+    type: string_textarea
+    weight: 28
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pattern_description_short:
+    type: string_textarea
+    weight: 27
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_pattern_subject:
+    type: entity_reference_autocomplete
+    weight: 37
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pattern_subject_detailed:
+    type: entity_reference_autocomplete
+    weight: 38
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pattern_type:
+    type: entity_reference_autocomplete
+    weight: 41
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pinterest_pin:
+    type: string_textarea
+    weight: 48
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_reference_date_range:
+    type: viewfield_select
+    weight: 59
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reference_download_links:
+    type: viewfield_select
+    weight: 60
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reference_entry_author:
+    type: viewfield_select
+    weight: 61
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reference_orcid_with_link:
+    type: viewfield_select
+    weight: 58
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reference_view_image:
+    type: viewfield_select
+    weight: 57
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_relation:
+    type: entity_reference_autocomplete
+    weight: 31
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_rights:
+    type: entity_reference_autocomplete
+    weight: 46
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_source:
+    type: string_textarea
+    weight: 32
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_source_orcid:
+    type: string_textfield
+    weight: 33
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_style_period:
+    type: entity_reference_autocomplete
+    weight: 39
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_technique_base_colour:
+    type: entity_reference_autocomplete
+    weight: 36
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_technique_base_type:
+    type: entity_reference_autocomplete
+    weight: 40
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_technique_base_type_desc:
+    type: string_textarea
+    weight: 16
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_technique_broche:
+    type: options_buttons
+    weight: 19
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_technique_couvert:
+    type: options_buttons
+    weight: 24
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_technique_density:
+    type: string_textarea
+    weight: 18
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_technique_effect:
+    type: string_textarea
+    weight: 17
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_technique_lance:
+    type: options_buttons
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_technique_lisere:
+    type: options_buttons
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_technique_metal:
+    type: options_buttons
+    weight: 22
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_technique_onde:
+    type: options_buttons
+    weight: 25
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_technique_plate:
+    type: options_buttons
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_technique_riant:
+    type: options_buttons
+    weight: 23
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_technique_structure:
+    type: string_textarea
+    weight: 15
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_technique_warp:
+    type: entity_reference_autocomplete
+    weight: 42
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_test_viewfield:
+    type: viewfield_select
+    weight: 62
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_textref:
+    type: string_textarea
+    weight: 34
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 47
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_member_of: true

@@ -1,0 +1,27 @@
+uuid: 1190de07-a89e-47ec-af19-bcde2a6a7ab4
+langcode: cs
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: KH1YVkR0al64YKHJFCNaqrqZbUmp2Lz-XrZSCRQg9p0
+id: bartik_page_title
+theme: bartik
+region: header
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Název stránky'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/node/*\r\n/user/*\r\n<front>"

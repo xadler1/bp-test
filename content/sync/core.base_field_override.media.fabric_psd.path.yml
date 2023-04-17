@@ -1,0 +1,20 @@
+uuid: ffc4c834-39b4-4690-8fce-f4f7ccb0f27b
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_psd
+  module:
+    - path
+id: media.fabric_psd.path
+field_name: path
+entity_type: media
+bundle: fabric_psd
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

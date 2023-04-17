@@ -1,0 +1,18 @@
+uuid: 737c6cf5-d733-4aa7-b1cb-596076243c00
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.style_period
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.style_period
+target_entity_type_id: taxonomy_term
+target_bundle: style_period
+default_langcode: cs
+language_alterable: false

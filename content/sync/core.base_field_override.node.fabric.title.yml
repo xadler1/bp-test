@@ -1,0 +1,18 @@
+uuid: 6d4d2e7b-6fe0-4fa5-93ae-6369b35fe041
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.fabric
+id: node.fabric.title
+field_name: title
+entity_type: node
+bundle: fabric
+label: Označení
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

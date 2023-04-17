@@ -1,0 +1,41 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 'Vyčistit formulář'
+          text_input_required: 'Vyberte jakýkoli filtr a kllikněte na tlačítko Vyhledat'
+      filters:
+        field_technique_warp:
+          group_info:
+            label: 'Struktura tkaniny'
+        field_technique_broche:
+          group_info:
+            label: 'Struktura tkaniny'
+        field_technique_lance:
+          group_info:
+            label: 'Struktura tkaniny'
+        field_technique_lisere:
+          group_info:
+            label: 'Struktura tkaniny'
+        field_technique_metal:
+          group_info:
+            label: 'Struktura tkaniny'
+        field_technique_riant:
+          group_info:
+            label: 'Struktura tkaniny'
+        field_technique_couvert:
+          group_info:
+            label: 'Struktura tkaniny'
+        field_technique_onde:
+          group_info:
+            label: 'Struktura tkaniny'
+        field_technique_plate:
+          group_info:
+            label: 'Struktura tkaniny'
+  page_4:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 'Vyčistit formulář'
+          text_input_required: 'Vyberte jakýkoli filtr a kllikněte na tlačítko Vyhledat'

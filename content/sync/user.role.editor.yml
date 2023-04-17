@@ -1,0 +1,172 @@
+uuid: 5279bb30-c18f-41fc-806e-afa3a470f264
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - media.type.fabric_jpg
+    - media.type.fabric_png
+    - media.type.fabric_psd
+    - media.type.fabric_tif
+    - node.type.fabric
+    - node.type.page
+    - taxonomy.vocabulary.location_detailed
+    - taxonomy.vocabulary.location_general
+    - taxonomy.vocabulary.location_source
+    - taxonomy.vocabulary.object_type_basic
+    - taxonomy.vocabulary.object_type_detailed
+    - taxonomy.vocabulary.pattern_subject
+    - taxonomy.vocabulary.pattern_subject_detailed
+    - taxonomy.vocabulary.pattern_type
+    - taxonomy.vocabulary.rights
+    - taxonomy.vocabulary.style_period
+    - taxonomy.vocabulary.technique_base_colour
+    - taxonomy.vocabulary.technique_base_type
+    - taxonomy.vocabulary.technique_warp
+    - taxonomy.vocabulary.zeme_puvodu
+  module:
+    - comment
+    - content_translation
+    - contextual
+    - entity_comparison
+    - file
+    - filter
+    - islandora
+    - media
+    - migrate_tools
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+id: editor
+label: Editor
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer migrations'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'administer url aliases'
+  - 'bypass node access'
+  - 'create content translations'
+  - 'create fabric content'
+  - 'create fabric_jpg media'
+  - 'create fabric_png media'
+  - 'create fabric_psd media'
+  - 'create fabric_tif media'
+  - 'create page content'
+  - 'create terms in location_detailed'
+  - 'create terms in location_general'
+  - 'create terms in location_source'
+  - 'create terms in object_type_basic'
+  - 'create terms in object_type_detailed'
+  - 'create terms in pattern_subject'
+  - 'create terms in pattern_subject_detailed'
+  - 'create terms in pattern_type'
+  - 'create terms in rights'
+  - 'create terms in style_period'
+  - 'create terms in technique_base_colour'
+  - 'create terms in technique_base_type'
+  - 'create terms in technique_warp'
+  - 'create terms in zeme_puvodu'
+  - 'create url aliases'
+  - 'delete any fabric content'
+  - 'delete any fabric_jpg media'
+  - 'delete any fabric_png media'
+  - 'delete any fabric_psd media'
+  - 'delete any fabric_tif media'
+  - 'delete any media'
+  - 'delete any page content'
+  - 'delete content translations'
+  - 'delete fabric revisions'
+  - 'delete media'
+  - 'delete own fabric content'
+  - 'delete own fabric_jpg media'
+  - 'delete own fabric_png media'
+  - 'delete own fabric_psd media'
+  - 'delete own fabric_tif media'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'delete terms in location_detailed'
+  - 'delete terms in location_general'
+  - 'delete terms in location_source'
+  - 'delete terms in object_type_basic'
+  - 'delete terms in object_type_detailed'
+  - 'delete terms in pattern_subject'
+  - 'delete terms in pattern_subject_detailed'
+  - 'delete terms in pattern_type'
+  - 'delete terms in rights'
+  - 'delete terms in style_period'
+  - 'delete terms in technique_base_colour'
+  - 'delete terms in technique_base_type'
+  - 'delete terms in technique_warp'
+  - 'delete terms in zeme_puvodu'
+  - 'edit any fabric content'
+  - 'edit any fabric_jpg media'
+  - 'edit any fabric_png media'
+  - 'edit any fabric_psd media'
+  - 'edit any fabric_tif media'
+  - 'edit any page content'
+  - 'edit own comments'
+  - 'edit own fabric content'
+  - 'edit own fabric_jpg media'
+  - 'edit own fabric_png media'
+  - 'edit own fabric_psd media'
+  - 'edit own fabric_tif media'
+  - 'edit own page content'
+  - 'edit terms in location_detailed'
+  - 'edit terms in location_general'
+  - 'edit terms in location_source'
+  - 'edit terms in object_type_basic'
+  - 'edit terms in object_type_detailed'
+  - 'edit terms in pattern_subject'
+  - 'edit terms in pattern_subject_detailed'
+  - 'edit terms in pattern_type'
+  - 'edit terms in rights'
+  - 'edit terms in style_period'
+  - 'edit terms in technique_base_colour'
+  - 'edit terms in technique_base_type'
+  - 'edit terms in technique_warp'
+  - 'edit terms in zeme_puvodu'
+  - 'manage media'
+  - 'revert all revisions'
+  - 'revert fabric revisions'
+  - 'revert page revisions'
+  - 'translate editable entities'
+  - 'translate fabric node'
+  - 'translate location_detailed taxonomy_term'
+  - 'translate location_general taxonomy_term'
+  - 'translate location_source taxonomy_term'
+  - 'translate object_type_basic taxonomy_term'
+  - 'translate object_type_detailed taxonomy_term'
+  - 'translate page node'
+  - 'translate pattern_subject taxonomy_term'
+  - 'translate pattern_subject_detailed taxonomy_term'
+  - 'translate pattern_type taxonomy_term'
+  - 'translate rights taxonomy_term'
+  - 'translate style_period taxonomy_term'
+  - 'translate technique_base_colour taxonomy_term'
+  - 'translate technique_base_type taxonomy_term'
+  - 'translate technique_warp taxonomy_term'
+  - 'translate zeme_puvodu taxonomy_term'
+  - 'update any media'
+  - 'update content translations'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use tkanina entity comparison'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view fabric revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view the administration theme'

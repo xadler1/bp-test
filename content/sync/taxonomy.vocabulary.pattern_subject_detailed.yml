@@ -1,0 +1,8 @@
+uuid: 9f5dd44f-b47c-4601-8cb1-968f557af909
+langcode: cs
+status: true
+dependencies: {  }
+name: 'Rostlinné motivy'
+vid: pattern_subject_detailed
+description: ''
+weight: -11

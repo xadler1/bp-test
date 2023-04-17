@@ -1,0 +1,20 @@
+uuid: 70fa72c4-5a0b-4a94-8930-8ed96e11faa8
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_tif
+  module:
+    - path
+id: media.fabric_tif.path
+field_name: path
+entity_type: media
+bundle: fabric_tif
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

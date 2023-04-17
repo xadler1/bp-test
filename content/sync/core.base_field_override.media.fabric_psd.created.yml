@@ -1,0 +1,18 @@
+uuid: 8a2c3d9a-bba1-45ef-94c4-16b253ef7015
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_psd
+id: media.fabric_psd.created
+field_name: created
+entity_type: media
+bundle: fabric_psd
+label: 'Authored on'
+description: 'The time the media item was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

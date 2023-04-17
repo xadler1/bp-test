@@ -1,0 +1,19 @@
+uuid: d97a7c3c-d2e5-4d47-a678-4b3b5ef16e23
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pinterest_pin
+    - node.type.fabric
+id: node.fabric.field_pinterest_pin
+field_name: field_pinterest_pin
+entity_type: node
+bundle: fabric
+label: 'Pinterest pin'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

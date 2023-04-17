@@ -1,0 +1,49 @@
+uuid: 0394c10d-d1c8-4725-b429-0c613c4c1f85
+langcode: cs
+status: true
+dependencies: {  }
+id: bp_paged_browsing
+label: 'BP paged browsing'
+panes:
+  left:
+    style: none
+    config: {  }
+  center:
+    style: mini
+    config:
+      display: pages
+      display_restriction: 2
+      prefix_display: true
+      suffix_display: true
+      first_link: not_on_first
+      previous_link: not_on_first
+      next_link: not_on_last
+      last_link: not_on_last
+      display_mode: widget
+      widget_resize: true
+      widget_button: auto
+      tags:
+        pages:
+          prefix_label: Strana
+          suffix_label: 'z @total'
+          page_current: '@number'
+          page_current_title: 'Současná strana'
+          page_current_reader: 'Současná strana'
+          first: «
+          first_title: První
+          first_reader: První
+          previous: ‹
+          previous_title: Předchozí
+          previous_reader: Předchozí
+          next: ›
+          next_title: Následující
+          next_reader: Následující
+          last: »
+          last_title: Poslední
+          last_reader: Poslední
+          pageset_empty: 'Žádné strany ke zobrazení.'
+          widget_title: 'Zadejte stranu, potom stiskněte Enter.'
+        items: {  }
+  right:
+    style: none
+    config: {  }

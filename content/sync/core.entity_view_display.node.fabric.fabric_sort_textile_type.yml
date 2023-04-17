@@ -1,0 +1,242 @@
+uuid: 1caaea91-15c4-4f25-9348-b41ab2a6de75
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.fabric_sort_textile_type
+    - field.field.node.fabric.field_cultural_context
+    - field.field.node.fabric.field_date_of_creation_decade
+    - field.field.node.fabric.field_date_of_creation_first
+    - field.field.node.fabric.field_date_of_creation_last
+    - field.field.node.fabric.field_date_of_documentation
+    - field.field.node.fabric.field_image_id
+    - field.field.node.fabric.field_image_refid
+    - field.field.node.fabric.field_material
+    - field.field.node.fabric.field_measurements_height_cm
+    - field.field.node.fabric.field_measurements_width_cm
+    - field.field.node.fabric.field_member_of
+    - field.field.node.fabric.field_object_description
+    - field.field.node.fabric.field_object_type_basic
+    - field.field.node.fabric.field_object_type_detailed
+    - field.field.node.fabric.field_pattern_description_long
+    - field.field.node.fabric.field_pattern_description_short
+    - field.field.node.fabric.field_pattern_subject
+    - field.field.node.fabric.field_pattern_subject_detailed
+    - field.field.node.fabric.field_pattern_type
+    - field.field.node.fabric.field_pinterest_pin
+    - field.field.node.fabric.field_reference_date_range
+    - field.field.node.fabric.field_reference_download_links
+    - field.field.node.fabric.field_reference_entry_author
+    - field.field.node.fabric.field_reference_orcid_with_link
+    - field.field.node.fabric.field_reference_view_image
+    - field.field.node.fabric.field_relation
+    - field.field.node.fabric.field_rights
+    - field.field.node.fabric.field_source
+    - field.field.node.fabric.field_source_orcid
+    - field.field.node.fabric.field_style_period
+    - field.field.node.fabric.field_technique_base_colour
+    - field.field.node.fabric.field_technique_base_type
+    - field.field.node.fabric.field_technique_base_type_desc
+    - field.field.node.fabric.field_technique_broche
+    - field.field.node.fabric.field_technique_couvert
+    - field.field.node.fabric.field_technique_density
+    - field.field.node.fabric.field_technique_effect
+    - field.field.node.fabric.field_technique_lance
+    - field.field.node.fabric.field_technique_lisere
+    - field.field.node.fabric.field_technique_metal
+    - field.field.node.fabric.field_technique_onde
+    - field.field.node.fabric.field_technique_plate
+    - field.field.node.fabric.field_technique_riant
+    - field.field.node.fabric.field_technique_structure
+    - field.field.node.fabric.field_technique_warp
+    - field.field.node.fabric.field_test_viewfield
+    - field.field.node.fabric.field_textref
+    - node.type.fabric
+  module:
+    - entity_comparison
+    - manage_display
+id: node.fabric.fabric_sort_textile_type
+targetEntityType: node
+bundle: fabric
+mode: fabric_sort_textile_type
+content:
+  bp_author_with_orcid_link_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_date_range_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_entry_author_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_eva_refid_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_fabric_title_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_image_download_links_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_image_download_links_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_image_download_links_entity_view_3:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_jpg_thumbnail_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_similar_images_media_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_similar_images_media_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_thumbnail_header_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  bp_view_image_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  fabric_thumbnail_header_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_object_type_detailed:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  link_for_entity_comparison_tkanina:
+    type: entity_comparison_link
+    label: above
+    settings:
+      enitity_comparison: ''
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  list_download_links_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+  view_image_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  created: true
+  display_media_entity_view_1: true
+  display_media_entity_view_2: true
+  display_media_service_file: true
+  display_media_thumbnail: true
+  eva_date_range_entity_view_1: true
+  fabric_image_download_entity_view_1: true
+  fabric_image_download_entity_view_2: true
+  fabric_image_download_entity_view_3: true
+  fabric_image_download_entity_view_4: true
+  fabric_search_result_brief_eva_entity_view_1: true
+  fabric_title_entity_view_1: true
+  field_cultural_context: true
+  field_date_of_creation_decade: true
+  field_date_of_creation_first: true
+  field_date_of_creation_last: true
+  field_date_of_documentation: true
+  field_image_id: true
+  field_image_refid: true
+  field_material: true
+  field_measurements_height_cm: true
+  field_measurements_width_cm: true
+  field_member_of: true
+  field_object_description: true
+  field_object_type_basic: true
+  field_pattern_description_long: true
+  field_pattern_description_short: true
+  field_pattern_subject: true
+  field_pattern_subject_detailed: true
+  field_pattern_type: true
+  field_pinterest_pin: true
+  field_reference_date_range: true
+  field_reference_download_links: true
+  field_reference_entry_author: true
+  field_reference_orcid_with_link: true
+  field_reference_view_image: true
+  field_relation: true
+  field_rights: true
+  field_source: true
+  field_source_orcid: true
+  field_style_period: true
+  field_technique_base_colour: true
+  field_technique_base_type: true
+  field_technique_base_type_desc: true
+  field_technique_broche: true
+  field_technique_couvert: true
+  field_technique_density: true
+  field_technique_effect: true
+  field_technique_lance: true
+  field_technique_lisere: true
+  field_technique_metal: true
+  field_technique_onde: true
+  field_technique_plate: true
+  field_technique_riant: true
+  field_technique_structure: true
+  field_technique_warp: true
+  field_test_viewfield: true
+  field_textref: true
+  islandora_fits_checksum: true
+  langcode: true
+  links: true
+  ondemand_thumbnail_entity_view_1: true
+  openseadragon_media_evas_entity_view_1: true
+  openseadragon_media_evas_entity_view_2: true
+  openseadragon_media_evas_service_file: true
+  pdfjs_media_evas_entity_view_1: true
+  pdfjs_media_evas_entity_view_2: true
+  pdfjs_media_evas_service_file: true
+  relates_to_entity_view_1: true
+  search_api_excerpt: true
+  tkaniny_entry_author_entity_view_1: true
+  tkaniny_orcid_entity_view_1: true
+  uid: true
+  view_image_entity_view_1: true

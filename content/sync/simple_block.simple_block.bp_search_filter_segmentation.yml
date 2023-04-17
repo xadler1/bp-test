@@ -1,0 +1,11 @@
+uuid: e4d1affc-87a0-46c9-8638-171f1ccf29b5
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: bp_search_filter_segmentation
+title: 'BP search filter segmentation'
+content:
+  value: "<script>\r\n\r\nfunction addBreak(element_class) {\r\n    var element = document.getElementsByClassName(element_class)[0];\r\n    var linebreak = document.createElement('hr');\r\n    element.parentNode.insertBefore(linebreak, element.nextSibling);\r\n\r\n}\r\n\r\nconst break_elements = [\"form-item-field-image-refid\",\r\n                  \"form-item-field-style-period\",\r\n                  \"form-item-field-pattern-subject-detailed\",\r\n                  \"form-item-field-technique-base-type\",\r\n                  \"form-item-heading\",\r\n                  \"form-item-field-technique-plate\",\r\n                  \"form-item-sort-order\"];\r\n\r\nbreak_elements.forEach(addBreak);\r\n</script>"
+  format: full_html

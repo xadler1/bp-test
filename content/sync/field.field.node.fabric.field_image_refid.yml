@@ -1,0 +1,19 @@
+uuid: 6c73d23c-f2a1-4e02-b225-33a5a71160e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_refid
+    - node.type.fabric
+id: node.fabric.field_image_refid
+field_name: field_image_refid
+entity_type: node
+bundle: fabric
+label: 'Catalogue number'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

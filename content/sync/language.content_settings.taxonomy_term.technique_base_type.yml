@@ -1,0 +1,18 @@
+uuid: 5ba33578-becf-4901-bb6f-3bac28d8e58a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.technique_base_type
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.technique_base_type
+target_entity_type_id: taxonomy_term
+target_bundle: technique_base_type
+default_langcode: cs
+language_alterable: false

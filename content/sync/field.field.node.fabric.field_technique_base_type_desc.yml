@@ -1,0 +1,19 @@
+uuid: 47899a6f-2d92-4c6f-bf92-5b806eb120ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_base_type_desc
+    - node.type.fabric
+id: node.fabric.field_technique_base_type_desc
+field_name: field_technique_base_type_desc
+entity_type: node
+bundle: fabric
+label: 'Fabric base'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

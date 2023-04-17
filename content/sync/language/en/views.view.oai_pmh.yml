@@ -1,0 +1,38 @@
+label: OAI-PMH
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        title:
+          separator: ', '
+  all_repository_items:
+    display_title: 'All Repository Items'
+  collection_sets:
+    display_title: 'Collection Sets'
+    display_options:
+      display_description: 'All items with collections grouped into a sets per collection they belong to.'
+      arguments:
+        field_member_of_target_id:
+          exception:
+            title: All
+  collectionless_set:
+    display_title: 'Collectionless Set'
+    display_options:
+      display_description: 'Set of items that do not belong to any Collection, to be used with Collection Sets.'

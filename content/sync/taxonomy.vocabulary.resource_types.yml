@@ -1,0 +1,10 @@
+uuid: e2e59b1e-f2a0-48a3-bcc9-613f89fafc71
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tcyfAGtPfozbmd4cDt41tx83H_y01kzvHdFTD9CXHZk
+name: 'Resource Types'
+vid: resource_types
+description: 'See http://purl.org/dc/dcmitype/ and http://id.loc.gov/vocabulary/resourceTypes.html (a nested list of types).'
+weight: 12

@@ -1,0 +1,22 @@
+_core:
+  default_config_hash: exRaKE0s6uZbfQrl_2WFEcTlc_1t81xEqCLuCCteUSk
+langcode: cs
+minimum_single: 0
+minimum_multiple: 0
+disable_search_threshold: 0
+minimum_width: 0
+max_shown_results: null
+use_relative_width: false
+jquery_selector: ".form-item-field-object-type-detailed select,\r\n.form-item-field-style-period select,\r\n.form-item-field-pattern-type select,\r\n.form-item-field-pattern-subject select,\r\n.form-item-field-pattern-subject-detailed select,\r\n.form-item-field-technique-base-colour select,\r\n.form-item-field-technique-base-type select,\r\n.form-item-field-technique-warp select,\r\n.form-item-field-technique-broche select,\r\n.form-item-field-technique-lance select,\r\n.form-item-field-technique-lisere select,\r\n.form-item-field-technique-plate select,\r\n.form-item-field-technique-onde select,\r\n.form-item-field-technique-couvert select,\r\n.form-item-field-technique-riant select,\r\n.form-item-field-technique-metal select\r\n\r\n"
+search_contains: false
+disable_search: false
+allow_single_deselect: true
+disabled_themes:
+  claro: '0'
+  olivero: '0'
+  bartik: '0'
+  islandora_muni: '0'
+chosen_include: 1
+placeholder_text_multiple: '- Vše -'
+placeholder_text_single: '- Vše -'
+no_results_text: 'Nenalezeny žádné výsledky'

@@ -1,0 +1,5 @@
+label: 'Celkový počet položek'
+display:
+  default:
+    display_options:
+      title: 'Počet položek'

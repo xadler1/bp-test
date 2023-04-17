@@ -1,0 +1,13 @@
+uuid: dd61f710-bc80-484e-982b-80d74a40e99e
+langcode: cs
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: FrZy1tmuXJcOxhXlBoI1Hsnen5TT-9OCC1iolWH84go
+id: media_delete_action
+label: 'Smazat média'
+type: media
+plugin: 'entity:delete_action:media'
+configuration: {  }

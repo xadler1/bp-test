@@ -1,0 +1,27 @@
+uuid: e0964413-889b-4616-81f3-b08ab6e9c543
+langcode: cs
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: jzu74Q7R0QWgw8IniA9HZRSb_a8RPak1M0q5J-VGkZI
+id: islandora_muni_account_menu
+theme: islandora_muni
+region: secondary_menu
+weight: -16
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

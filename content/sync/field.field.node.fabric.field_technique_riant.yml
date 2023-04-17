@@ -1,0 +1,23 @@
+uuid: 8cf3b0c6-d301-4d72-bf11-0a7771bbe502
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_riant
+    - node.type.fabric
+id: node.fabric.field_technique_riant
+field_name: field_technique_riant
+entity_type: node
+bundle: fabric
+label: 'Filé riant'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

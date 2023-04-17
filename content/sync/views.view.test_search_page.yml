@@ -1,0 +1,846 @@
+uuid: fc558fdc-e1f8-4b06-832b-2c77316a18d2
+langcode: en
+status: false
+dependencies:
+  config:
+    - field.storage.node.field_cultural_context
+    - search_api.index.fabric_index
+    - system.menu.main
+    - taxonomy.vocabulary.object_type_detailed
+    - taxonomy.vocabulary.pattern_subject
+    - taxonomy.vocabulary.pattern_subject_detailed
+    - taxonomy.vocabulary.pattern_type
+    - taxonomy.vocabulary.technique_base_colour
+    - taxonomy.vocabulary.technique_base_type
+  module:
+    - search_api
+id: test_search_page
+label: Homepage
+module: views
+description: ''
+tag: ''
+base_table: search_api_index_fabric_index
+base_field: search_api_id
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      fields:
+        field_cultural_context:
+          id: field_cultural_context
+          table: search_api_index_fabric_index
+          field: field_cultural_context
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings: {  }
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+            display_methods: {  }
+        title:
+          id: title
+          table: search_api_index_fabric_index
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 80
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: true
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: none
+        options: {  }
+      empty: {  }
+      sorts:
+        field_date_of_creation_decade:
+          id: field_date_of_creation_decade
+          table: search_api_index_fabric_index
+          field: field_date_of_creation_decade
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: Období
+            field_identifier: field_date_of_creation_decade
+          exposed: true
+        field_object_type_detailed:
+          id: field_object_type_detailed
+          table: search_api_index_fabric_index
+          field: field_object_type_detailed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: 'Typ textilie'
+            field_identifier: field_object_type_detailed
+          exposed: true
+        field_technique_base_type:
+          id: field_technique_base_type
+          table: search_api_index_fabric_index
+          field: field_technique_base_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: 'Technika základu'
+            field_identifier: field_technique_base_type
+          exposed: true
+        field_pattern_subject:
+          id: field_pattern_subject
+          table: search_api_index_fabric_index
+          field: field_pattern_subject
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: 'Motivy dekoru'
+            field_identifier: field_pattern_subject
+          exposed: true
+      arguments: {  }
+      filters:
+        field_date_of_creation_decade:
+          id: field_date_of_creation_decade
+          table: search_api_index_fabric_index
+          field: field_date_of_creation_decade
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_string
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_date_of_creation_decade_op
+            label: Období
+            description: null
+            use_operator: false
+            operator: field_date_of_creation_decade_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_date_of_creation_decade
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            min_placeholder: null
+            max_placeholder: null
+            placeholder: null
+          is_grouped: true
+          group_info:
+            label: Období
+            description: ''
+            identifier: field_date_of_creation_decade
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              2:
+                title: 1610-1620
+                operator: between
+                value:
+                  min: '1610'
+                  max: '1620'
+                  value: ''
+              3:
+                title: 1650-1660
+                operator: between
+                value:
+                  min: '1650'
+                  max: '1660'
+                  value: ''
+              4:
+                title: 1660-1670
+                operator: between
+                value:
+                  min: '1660'
+                  max: '1670'
+                  value: ''
+              5:
+                title: 1670-1680
+                operator: between
+                value:
+                  min: '1670'
+                  max: '1680'
+                  value: ''
+              6:
+                title: 1680-1690
+                operator: between
+                value:
+                  min: '1680'
+                  max: '1690'
+                  value: ''
+              7:
+                title: 1690-1700
+                operator: between
+                value:
+                  min: '1690'
+                  max: '1700'
+                  value: ''
+              8:
+                title: 1700-1710
+                operator: between
+                value:
+                  min: '1700'
+                  max: '1710'
+                  value: ''
+              9:
+                title: 1710-1720
+                operator: between
+                value:
+                  min: '1710'
+                  max: '1720'
+                  value: ''
+              10:
+                title: 1720-1730
+                operator: between
+                value:
+                  min: '1720'
+                  max: '1730'
+                  value: ''
+              11:
+                title: 1730-1740
+                operator: between
+                value:
+                  min: '1730'
+                  max: '1740'
+                  value: ''
+              12:
+                title: 1740-1750
+                operator: between
+                value:
+                  min: '1740'
+                  max: '1750'
+                  value: ''
+              13:
+                title: 1750-1760
+                operator: between
+                value:
+                  min: '1750'
+                  max: '1760'
+                  value: ''
+              14:
+                title: 1760-1770
+                operator: between
+                value:
+                  min: '1760'
+                  max: '1770'
+                  value: ''
+              15:
+                title: 1770-1780
+                operator: between
+                value:
+                  min: '1770'
+                  max: '1780'
+                  value: ''
+        field_pattern_type:
+          id: field_pattern_type
+          table: search_api_index_fabric_index
+          field: field_pattern_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_term
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_pattern_type_op
+            label: 'Typ dekoru'
+            description: ''
+            use_operator: false
+            operator: field_pattern_type_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_pattern_type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+              fedoraadmin: '0'
+              editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: pattern_type
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_pattern_subject:
+          id: field_pattern_subject
+          table: search_api_index_fabric_index
+          field: field_pattern_subject
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_term
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_pattern_subject_op
+            label: 'Motivy dekoru'
+            description: ''
+            use_operator: false
+            operator: field_pattern_subject_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_pattern_subject
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+              fedoraadmin: '0'
+              editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: pattern_subject
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_pattern_subject_detailed:
+          id: field_pattern_subject_detailed
+          table: search_api_index_fabric_index
+          field: field_pattern_subject_detailed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_term
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_pattern_subject_detailed_op
+            label: 'Rostlinné motivy'
+            description: ''
+            use_operator: false
+            operator: field_pattern_subject_detailed_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_pattern_subject_detailed
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+              fedoraadmin: '0'
+              editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: pattern_subject_detailed
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_technique_base_type:
+          id: field_technique_base_type
+          table: search_api_index_fabric_index
+          field: field_technique_base_type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_term
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_technique_base_type_op
+            label: 'Technika základu'
+            description: ''
+            use_operator: false
+            operator: field_technique_base_type_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_technique_base_type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+              fedoraadmin: '0'
+              editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: technique_base_type
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_technique_base_colour:
+          id: field_technique_base_colour
+          table: search_api_index_fabric_index
+          field: field_technique_base_colour
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_term
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_technique_base_colour_op
+            label: 'Barva základu'
+            description: ''
+            use_operator: false
+            operator: field_technique_base_colour_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_technique_base_colour
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+              fedoraadmin: '0'
+              editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: technique_base_colour
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_object_type_detailed:
+          id: field_object_type_detailed
+          table: search_api_index_fabric_index
+          field: field_object_type_detailed
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_term
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_object_type_detailed_op
+            label: 'Typ textilie'
+            description: ''
+            use_operator: false
+            operator: field_object_type_detailed_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_object_type_detailed
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+              fedoraadmin: '0'
+              editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: object_type_detailed
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_location_general:
+          id: field_location_general
+          table: search_api_index_fabric_index
+          field: field_location_general
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_term
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_location_general_op
+            label: Děkanát
+            description: ''
+            use_operator: false
+            operator: field_location_general_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_location_general
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+              fedoraadmin: '0'
+              editor: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: location_general
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: grid
+        options:
+          uses_fields: false
+          columns: 5
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              fabric: thumbnail
+      query:
+        type: search_api_query
+        options:
+          bypass_access: false
+          skip_access: false
+          preserve_facet_query_args: false
+      relationships: {  }
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
+        - user
+        - 'user.node_grants:view'
+      tags:
+        - 'config:field.storage.node.field_cultural_context'
+        - 'config:search_api.index.fabric_index'
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 1
+    display_options:
+      cache:
+        type: none
+      defaults:
+        cache: false
+      display_extenders:
+        matomo:
+          enabled: false
+          keyword_gets: ''
+          keyword_behavior: first
+          keyword_concat_separator: ' '
+          category_behavior: none
+          category_gets: ''
+          category_concat_separator: ' '
+          category_fallback: ''
+          category_facets: {  }
+          category_facets_concat_separator: ', '
+      path: homepage
+      menu:
+        type: normal
+        title: Prohlížení
+        description: ''
+        weight: -49
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
+        - user
+        - 'user.node_grants:view'
+      tags:
+        - 'config:field.storage.node.field_cultural_context'
+        - 'config:search_api.index.fabric_index'

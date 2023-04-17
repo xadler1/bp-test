@@ -1,0 +1,28 @@
+uuid: 9fbf0b32-f4c6-4513-afee-80c86aaf8f08
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - contact
+    - entity_comparison
+    - filter
+    - media
+    - search_api_autocomplete
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'use search_api_autocomplete for fabric_search'
+  - 'use text format restricted_html'
+  - 'use tkanina entity comparison'
+  - 'view media'

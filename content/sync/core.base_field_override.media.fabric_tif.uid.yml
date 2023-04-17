@@ -1,0 +1,20 @@
+uuid: b3de3541-dfea-470d-965f-3006eb1dfa34
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_tif
+id: media.fabric_tif.uid
+field_name: uid
+entity_type: media
+bundle: fabric_tif
+label: 'Authored by'
+description: 'The user ID of the author.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

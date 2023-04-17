@@ -1,0 +1,15 @@
+uuid: 20a14ba3-b92d-47d4-93fe-16397f37bd2d
+langcode: cs
+status: true
+dependencies: {  }
+name: square_250x250
+label: 'Square (250x250)'
+effects:
+  7fba0e93-0380-4ff3-ab9b-98424d6e2649:
+    uuid: 7fba0e93-0380-4ff3-ab9b-98424d6e2649
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 250
+      anchor: center-top

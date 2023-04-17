@@ -1,0 +1,48 @@
+uuid: d3f83c93-4db2-4243-a211-4f601de32a1c
+langcode: cs
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.diecezni_muzeum_logo
+  module:
+    - context
+    - islandora
+    - simple_block
+  theme:
+    - bartik
+id: dieceznimuzeumlogo
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: 'simple_block:diecezni_muzeum_logo'
+settings:
+  id: 'simple_block:diecezni_muzeum_logo'
+  label: 'Diecézní muzeum logo'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    mimetype: ''
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,294 @@
+uuid: bb9c0459-793a-4abd-bd2b-c818dda6742c
+langcode: en
+status: true
+dependencies: {  }
+id: fabric_import_metadata_prep
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: import_fabric_metadata
+label: 'Import fabric metadata prep'
+source:
+  plugin: csv
+  path: /var/www/html/drupal/web/sites/default/files/metadata_import_cisty.csv
+  delimiter: ','
+  enclosure: '"'
+  header_offset: 0
+  ids:
+    - image_id
+  fields:
+    -
+      name: image_refid
+      label: 'Katalogové číslo'
+    -
+      name: date_of_documentation
+      label: Datum
+    -
+      name: image_id
+      label: 'Identifikační číslo'
+    -
+      name: title
+      label: Název
+    -
+      name: datace
+      label: Datace
+    -
+      name: object_description
+      label: 'Způsob použití'
+    -
+      name: pattern_description_long
+      label: 'Popis dekoru'
+    -
+      name: technique_structure
+      label: 'Struktura tkaniny'
+    -
+      name: technique_base_type_desc
+      label: 'Základ tkaniny'
+    -
+      name: technique_effect
+      label: 'Efekty tkaniny'
+    -
+      name: technique_density
+      label: Dostava
+    -
+      name: material
+      label: Materiál
+    -
+      name: technique_base_type
+      label: 'Technika základu'
+    -
+      name: technique_base_colour
+      label: 'Barva základu'
+    -
+      name: pattern_type
+      label: 'Okruh dekoru'
+    -
+      name: measurements_height_cm
+      label: 'Rozměr vzoru : min. výška (cm)'
+    -
+      name: measurements_width_cm
+      label: 'Rozměr vzoru : min. šířka (cm)'
+    -
+      name: technique_warp
+      label: Osnova
+    -
+      name: technique_broche
+      label: 'Broché útek'
+    -
+      name: technique_lance
+      label: 'Lancé útek'
+    -
+      name: technique_lisere
+      label: 'Liseré útek'
+    -
+      name: technique_metal
+      label: 'Pokovené nitě'
+    -
+      name: technique_riant
+      label: 'Filé riant'
+    -
+      name: technique_couvert
+      label: 'Filé couvert'
+    -
+      name: technique_onde
+      label: Ondé
+    -
+      name: technique_plate
+      label: Lamela
+    -
+      name: object_type_basic
+      label: 'Typ předmětu'
+    -
+      name: object_type_detailed
+      label: 'Typ textilie (extrakcí)'
+    -
+      name: cultural_context
+      label: 'Země původu'
+    -
+      name: pattern_description_short
+      label: 'Charakteristika dekoru'
+    -
+      name: pattern_subject
+      label: 'Motivy dekoru'
+    -
+      name: pattern_subject_detailed
+      label: 'Rostlinné motivy'
+    -
+      name: style_period
+      label: 'Stylové období'
+    -
+      name: relation
+      label: 'Souvisí s dekorem (extrakcí)'
+    -
+      name: relation_name
+      label: 'Souvisí s dekorem (extrakcí, název)'
+    -
+      name: source
+      label: 'Autor popisu'
+    -
+      name: textref
+      label: 'Odkazy na literaturu'
+    -
+      name: rights
+      label: Licence
+  constants:
+    bp_view_image: 'BP View image'
+    test_id: '1539'
+process:
+  title:
+    plugin: default_value
+    source: title
+    default_value: 'Empty title'
+  field_object_type_basic:
+    -
+      plugin: str_replace
+      regex: true
+      source: object_type_basic
+      search: '/; */'
+      replace: ;
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^ */'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *$/'
+      replace: ''
+    -
+      plugin: explode
+      delimiter: ;
+    -
+      plugin: entity_generate
+      entity_type: taxonomy_term
+  field_object_type_detailed:
+    -
+      plugin: str_replace
+      regex: true
+      search: '/; */'
+      replace: ;
+      source: object_type_detailed
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^ */'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *$/'
+      replace: ''
+    -
+      plugin: explode
+      delimiter: ;
+    -
+      plugin: entity_generate
+      entity_type: taxonomy_term
+  field_technique_base_type:
+    -
+      plugin: entity_generate
+      source: technique_base_type
+      entity_type: taxonomy_term
+  field_technique_base_colour:
+    -
+      plugin: entity_generate
+      source: technique_base_colour
+      entity_type: taxonomy_term
+  field_technique_warp:
+    -
+      plugin: str_replace
+      regex: true
+      search: '/; */'
+      replace: ;
+      source: technique_warp
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^ */'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *$/'
+      replace: ''
+    -
+      plugin: explode
+      delimiter: ;
+    -
+      plugin: entity_generate
+      entity_type: taxonomy_term
+  field_cultural_context:
+    -
+      plugin: entity_generate
+      source: cultural_context
+      entity_type: taxonomy_term
+  field_pattern_type:
+    -
+      plugin: entity_generate
+      source: pattern_type
+      entity_type: taxonomy_term
+  field_pattern_subject:
+    -
+      plugin: str_replace
+      regex: true
+      search: '/; */'
+      replace: ;
+      source: pattern_subject
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^ */'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *$/'
+      replace: ''
+    -
+      plugin: explode
+      delimiter: ;
+    -
+      plugin: entity_generate
+      entity_type: taxonomy_term
+  field_pattern_subject_detailed:
+    -
+      plugin: str_replace
+      regex: true
+      search: '/; */'
+      replace: ;
+      source: pattern_subject_detailed
+    -
+      plugin: str_replace
+      regex: true
+      search: '/^ */'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: true
+      search: '/ *$/'
+      replace: ''
+    -
+      plugin: explode
+      delimiter: ;
+    -
+      plugin: entity_generate
+      entity_type: taxonomy_term
+  field_style_period:
+    -
+      plugin: entity_generate
+      source: style_period
+      entity_type: taxonomy_term
+  field_rights:
+    -
+      plugin: entity_generate
+      source: rights
+      entity_type: taxonomy_term
+  type:
+    plugin: default_value
+    default_value: fabric
+destination:
+  plugin: 'entity:node'
+  default_bundle: fabric
+migration_dependencies: null

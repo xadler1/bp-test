@@ -1,0 +1,24 @@
+uuid: 5fdd7178-a623-44ae-bca2-ef4e79ef9bda
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.audio
+_core:
+  default_config_hash: n2G2117mFQVI2O2jhXUDB0Ojgy9QqS5EXq_CqbEq-lo
+id: media.audio.status
+field_name: status
+entity_type: media
+bundle: audio
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Zapnuto
+  off_label: Vypnuto
+field_type: boolean

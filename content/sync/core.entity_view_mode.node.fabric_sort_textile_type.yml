@@ -1,0 +1,10 @@
+uuid: 20394ff7-b082-40f1-ba62-a66369533b1b
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+id: node.fabric_sort_textile_type
+label: 'Fabric sort textile_type'
+targetEntityType: node
+cache: true

@@ -1,0 +1,18 @@
+uuid: daaa7736-05b8-430c-ae79-0767a7de18dc
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.object_type_basic
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.object_type_basic
+target_entity_type_id: taxonomy_term
+target_bundle: object_type_basic
+default_langcode: cs
+language_alterable: false

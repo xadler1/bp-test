@@ -1,0 +1,10 @@
+uuid: d6f2dc6b-bafa-413a-9225-0605a28d2e65
+langcode: cs
+status: true
+dependencies:
+  module:
+    - media
+id: media.test_view
+label: 'Test view'
+targetEntityType: media
+cache: true

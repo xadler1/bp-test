@@ -1,0 +1,24 @@
+uuid: 6a786e18-d15d-48ed-999f-7ac55b4e6339
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.file
+_core:
+  default_config_hash: msBL8N4SjfVUkKEXr0WUt04uQsoo31V29IuyooqXxC4
+id: media.file.status
+field_name: status
+entity_type: media
+bundle: file
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Zapnuto
+  off_label: Vypnuto
+field_type: boolean

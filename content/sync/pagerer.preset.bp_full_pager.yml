@@ -1,0 +1,75 @@
+uuid: 832276a4-41a9-4256-9f41-d96bf5218680
+langcode: cs
+status: true
+dependencies: {  }
+id: bp_full_pager
+label: 'BP full pager'
+panes:
+  left:
+    style: none
+    config: {  }
+  center:
+    style: standard
+    config:
+      display: pages
+      display_restriction: 2
+      prefix_display: false
+      suffix_display: false
+      first_link: not_on_first
+      previous_link: not_on_first
+      next_link: not_on_last
+      last_link: not_on_last
+      quantity: 9
+      display_mode: normal
+      separator_display: false
+      breaker_display: true
+      tags:
+        page_breaker: …
+        page_separator: '|'
+        pages:
+          prefix_label: Strana
+          suffix_label: 'z @total'
+          page_current: '@number'
+          page_current_title: 'Současná strana'
+          page_current_reader: 'Současná strana'
+          first: '« První'
+          first_title: 'Jít na první stranu'
+          first_reader: 'První strana'
+          previous: '‹ Předchozí'
+          previous_title: 'Jít na předchozí stranu'
+          previous_reader: 'Předchozí strana'
+          next: 'Následující ›'
+          next_title: 'Jít na následující stranu'
+          next_reader: 'Následující strana'
+          last: 'Poslední »'
+          last_title: 'Jít na poslední stranu'
+          last_reader: 'Poslední strana'
+          pageset_empty: 'Žádné strany ke zobrazení'
+          page_previous: '@number'
+          page_next: '@number'
+          page_title: 'Jít na stranu @number'
+          page_reader: Strana
+        items:
+          prefix_label: Položka
+          suffix_label: 'z @total_items'
+          page_current_title: 'Současná položka'
+          page_current_reader: 'Současná položka'
+          first: '« První'
+          first_title: 'Jít na první položku'
+          first_reader: 'První položka'
+          previous: '‹ Předchozí'
+          previous_title: 'Jít na předchozí položku'
+          previous_reader: 'Předchozí položka'
+          next: 'Následující ›'
+          next_title: 'Jít na následující položku'
+          next_reader: 'Následující položka'
+          last: 'Poslední »'
+          last_title: 'Jít na poslední položku'
+          last_reader: 'Poslední položka'
+          pageset_empty: 'Žádné položky ke zobrazení'
+          page_title: 'Jít na položku @item'
+          page_reader: Položka
+        item_ranges: {  }
+  right:
+    style: none
+    config: {  }

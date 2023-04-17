@@ -1,0 +1,15 @@
+uuid: 9f253bea-792a-4689-89fd-54b1c387ab57
+langcode: cs
+status: true
+dependencies: {  }
+name: resize_crop_800x600
+label: 'Resize/crop (800x600)'
+effects:
+  ff42598e-21e5-4728-b720-729738bc8037:
+    uuid: ff42598e-21e5-4728-b720-729738bc8037
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 600
+      anchor: center-top

@@ -1,0 +1,18 @@
+uuid: 304d9b8e-5037-41b4-bed6-8d5ce7b3e53d
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.zeme_puvodu
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.zeme_puvodu
+target_entity_type_id: taxonomy_term
+target_bundle: zeme_puvodu
+default_langcode: cs
+language_alterable: false

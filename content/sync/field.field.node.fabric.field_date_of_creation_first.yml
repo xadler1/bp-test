@@ -1,0 +1,23 @@
+uuid: 3415c257-01d0-4f79-9e4b-dba7d7290589
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_of_creation_first
+    - node.type.fabric
+id: node.fabric.field_date_of_creation_first
+field_name: field_date_of_creation_first
+entity_type: node
+bundle: fabric
+label: 'Creation from'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

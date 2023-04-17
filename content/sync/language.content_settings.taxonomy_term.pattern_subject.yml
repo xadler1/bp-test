@@ -1,0 +1,18 @@
+uuid: f5003822-ef59-4d5a-bae7-fb9da323a5b7
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pattern_subject
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.pattern_subject
+target_entity_type_id: taxonomy_term
+target_bundle: pattern_subject
+default_langcode: cs
+language_alterable: false

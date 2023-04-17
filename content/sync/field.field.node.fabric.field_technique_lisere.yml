@@ -1,0 +1,23 @@
+uuid: 9bf2deee-dde1-4235-bf37-e36be17e8d18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_lisere
+    - node.type.fabric
+id: node.fabric.field_technique_lisere
+field_name: field_technique_lisere
+entity_type: node
+bundle: fabric
+label: 'Liseré weft'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

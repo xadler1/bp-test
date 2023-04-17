@@ -1,0 +1,29 @@
+uuid: 2083ef25-5114-440a-91ff-7cf7d3548cf3
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cultural_context
+    - node.type.fabric
+    - taxonomy.vocabulary.zeme_puvodu
+id: node.fabric.field_cultural_context
+field_name: field_cultural_context
+entity_type: node
+bundle: fabric
+label: 'Země původu'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      zeme_puvodu: zeme_puvodu
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

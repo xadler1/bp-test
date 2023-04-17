@@ -1,0 +1,20 @@
+uuid: ce74e539-221d-4ae6-9b06-35469830be63
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_jpg
+id: media.fabric_jpg.name
+field_name: name
+entity_type: media
+bundle: fabric_jpg
+label: Name
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

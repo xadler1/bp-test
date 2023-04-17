@@ -1,0 +1,11 @@
+uuid: 8a18cec4-759d-412b-9a55-e911f2afdee7
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: diecezni_muzeum_logo
+title: 'Diecézní muzeum logo'
+content:
+  value: "<p><a href=\"https://www.dieceznimuzeum.cz/\"><img alt=\"Logo Diecézního muzea\" src=\"/sites/default/files/logo/dieceze.svg\" /></a></p>\r\n"
+  format: full_html

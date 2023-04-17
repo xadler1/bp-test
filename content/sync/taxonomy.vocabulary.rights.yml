@@ -1,0 +1,8 @@
+uuid: f9cf3c57-9906-4ca3-b21c-255481817cda
+langcode: cs
+status: true
+dependencies: {  }
+name: Licence
+vid: rights
+description: ''
+weight: -14

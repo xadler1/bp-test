@@ -1,0 +1,22 @@
+uuid: 2abe327c-ee12-4f3b-b476-58081a05ce31
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.fits_technical_metadata
+id: media.fits_technical_metadata.status
+field_name: status
+entity_type: media
+bundle: fits_technical_metadata
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,20 @@
+uuid: 7eb3495b-64f4-4da7-b725-95bd77774d7f
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_jpg
+  module:
+    - path
+id: media.fabric_jpg.path
+field_name: path
+entity_type: media
+bundle: fabric_jpg
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

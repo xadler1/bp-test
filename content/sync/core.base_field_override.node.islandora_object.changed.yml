@@ -1,0 +1,20 @@
+uuid: 91e3f960-5fa0-4593-8fe9-f482ee74f8fa
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.islandora_object
+_core:
+  default_config_hash: LLL4Ifzyon9Q1aapBWH8t3OeF7_DmDSzAL2gj8KCg3I
+id: node.islandora_object.changed
+field_name: changed
+entity_type: node
+bundle: islandora_object
+label: Změněno
+description: 'Čas, kdy byl uzel naposledy upraven.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,38 @@
+uuid: 1304c904-d528-4d72-910a-c460176af728
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.location_general
+  module:
+    - manage_display
+    - text
+id: taxonomy_term.location_general.default
+targetEntityType: taxonomy_term
+bundle: location_general
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  list_items_with_taxonomy_term_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: title
+    label: hidden
+    settings:
+      linked: false
+      tag: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

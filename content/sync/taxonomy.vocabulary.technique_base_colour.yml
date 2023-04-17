@@ -1,0 +1,8 @@
+uuid: 1eb251bb-897d-4b52-93e1-6a916d2ee4fd
+langcode: cs
+status: true
+dependencies: {  }
+name: 'Barva základu'
+vid: technique_base_colour
+description: 'Popis pojmu „Barva základu“'
+weight: -17

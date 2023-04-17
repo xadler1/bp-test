@@ -1,0 +1,10 @@
+uuid: 416c5062-0fb4-4918-a830-ac82a3ffc16a
+langcode: cs
+status: true
+dependencies: {  }
+id: import_fabric_metadata
+label: 'Import fabric metadata'
+description: ''
+source_type: ''
+module: null
+shared_configuration: null

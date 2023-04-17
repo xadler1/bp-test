@@ -1,0 +1,11 @@
+uuid: 72735509-4427-414b-9d04-798440ae1c1a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: int_citace_com
+title: 'Integrate citace.com'
+content:
+  value: "<div id=\"com.citacepro.citace\">&nbsp;</div>\r\n<script src=\"https://www.citacepro.com/citace-v-katalogu.js\"></script>"
+  format: full_html

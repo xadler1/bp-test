@@ -1,0 +1,8 @@
+uuid: 258c6c09-ccc3-410d-a601-7fe94ae6eaf3
+langcode: cs
+status: true
+dependencies: {  }
+name: Lokace
+vid: location_source
+description: ''
+weight: -13

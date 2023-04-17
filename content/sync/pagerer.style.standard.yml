@@ -1,0 +1,89 @@
+_core:
+  default_config_hash: igO6H6v8MWpPKOsd1zmT-Od1xRB4Srna7mu6RBmDzD8
+langcode: cs
+default_config:
+  display: pages
+  display_restriction: 2
+  prefix_display: false
+  suffix_display: false
+  first_link: not_on_first
+  previous_link: not_on_first
+  next_link: not_on_last
+  last_link: not_on_last
+  quantity: 9
+  fl_breakers: true
+  display_mode: normal
+  separator_display: false
+  breaker_display: true
+  tags:
+    page_breaker: …
+    page_separator: '|'
+    pages:
+      prefix_label: Stránka
+      suffix_label: 'of @total'
+      page_current: '@number'
+      page_current_title: 'Aktuální stránka'
+      page_current_reader: 'Aktuální stránka'
+      first: '« První'
+      first_title: 'Přejít na první stranu'
+      first_reader: 'First page'
+      previous: '‹ Předchozí'
+      previous_title: 'Přejít na předchozí stranu'
+      previous_reader: 'Předchozí stránka'
+      next: 'Následující ›'
+      next_title: 'Přejít na další stranu'
+      next_reader: 'Následující stránka'
+      last: 'Poslední »'
+      last_title: 'Přejít na poslední stranu'
+      last_reader: 'Poslední stránka'
+      pageset_empty: 'No pages to display.'
+      page_previous: '@number'
+      page_next: '@number'
+      page_title: 'Go to page @number'
+      page_reader: Stránka
+    items:
+      prefix_label: Item
+      suffix_label: 'of @total_items'
+      page_current: '@item'
+      page_current_title: 'Current items'
+      page_current_reader: 'Current items'
+      first: '« První'
+      first_title: 'Go to first item'
+      first_reader: 'První položka'
+      previous: '‹ Předchozí'
+      previous_title: 'Go to previous items'
+      previous_reader: 'Previous items'
+      next: 'Následující ›'
+      next_title: 'Go to next items'
+      next_reader: 'Next items'
+      last: 'Poslední »'
+      last_title: 'Go to last item'
+      last_reader: 'Last item'
+      pageset_empty: 'No items to display.'
+      page_previous: '@item'
+      page_next: '@item'
+      page_title: 'Go to item @item'
+      page_reader: Item
+    item_ranges:
+      prefix_label: Položky
+      suffix_label: 'of @total_items'
+      page_current: '@item_low-@item_high'
+      page_current_title: 'Current items'
+      page_current_reader: 'Current items'
+      first: '« První'
+      first_title: 'Go to first items'
+      first_reader: 'First items'
+      previous: '‹ Předchozí'
+      previous_title: 'Go to previous items'
+      previous_reader: 'Previous items'
+      next: 'Následující ›'
+      next_title: 'Go to next items'
+      next_reader: 'Next items'
+      last: 'Poslední »'
+      last_title: 'Go to last items'
+      last_reader: 'Last items'
+      pageset_empty: 'No items to display.'
+      page_previous: '@item_low-@item_high'
+      page_next: '@item_low-@item_high'
+      page_title: 'Go to items @item_low-@item_high'
+      page_reader: Položky

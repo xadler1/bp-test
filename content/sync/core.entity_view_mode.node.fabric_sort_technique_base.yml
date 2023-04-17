@@ -1,0 +1,10 @@
+uuid: 279ff2c5-c67b-421d-943f-f91f0b316a8e
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+id: node.fabric_sort_technique_base
+label: 'Fabric sort technique base'
+targetEntityType: node
+cache: true

@@ -1,0 +1,11 @@
+uuid: 074a3de7-06ef-4ddf-af8e-0f0484aabf22
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: footer_copyright_cs
+title: 'Footer copyright cs'
+content:
+  value: "<p>© 2022 <a href=\"https://muni.cz/\">Masarykova univerzita</a><br />\r\n<a href=\"mailto:digitalia@phil.muni.cz\">Webmaster</a> | <a class=\"mc-open-dialog\" href=\"#\">Cookies</a></p>\r\n"
+  format: full_html

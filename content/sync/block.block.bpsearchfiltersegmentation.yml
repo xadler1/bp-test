@@ -1,0 +1,53 @@
+uuid: c9008ed7-617b-4220-a56a-71f96de20f16
+langcode: cs
+status: false
+dependencies:
+  config:
+    - simple_block.simple_block.bp_search_filter_segmentation
+  module:
+    - context
+    - islandora
+    - simple_block
+  theme:
+    - bartik
+id: bpsearchfiltersegmentation
+theme: bartik
+region: footer_fourth
+weight: -14
+provider: null
+plugin: 'simple_block:bp_search_filter_segmentation'
+settings:
+  id: 'simple_block:bp_search_filter_segmentation'
+  label: 'BP search filter segmentation'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  view_inclusion:
+    id: view_inclusion
+    negate: false
+    view_inclusion:
+      view-bp_search-page_6: view-bp_search-page_6
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    mimetype: ''
+    negate: false
+    context_mapping: {  }

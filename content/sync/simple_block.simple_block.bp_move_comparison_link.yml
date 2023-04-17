@@ -1,0 +1,11 @@
+uuid: a418adf1-19b4-4f41-a804-30a33d095768
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: bp_move_comparison_link
+title: 'BP move comparison link'
+content:
+  value: "<script>\r\n//var block = document.getElementsByClassName('entity-comparison-tkanina')[0];\r\n//var block = document.getElementsByClassName('block-entity-comparison-blocktkanina')[0];\r\n//block.classList.add(\"new-class\");\r\nvar block = document.getElementById('block-tkanina');\r\nif (!block) {\r\n    document.write(\"NO BLOCK\");\r\n}\r\nvar test_block = document.createElement('li');\r\ntest_block.className = \"menu-item\";\r\ntest_block.innerHTML = \"test\";\r\nvar primary_menu = document.getElementById('block-bartik-main-menu');\r\nvar element = primary_menu.getElementsByClassName('menu-item')[1];\r\n\r\nelement.parentNode.insertBefore(test_block, element.nextSibling);\r\n</script>"
+  format: full_html

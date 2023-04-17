@@ -1,0 +1,34 @@
+third_party_settings:
+  field_group:
+    group_structure:
+      label: System
+    group_required:
+      format_settings:
+        description: 'The title recorded here will be the main display title used within the system, and is limited to 255 characters. If your title is longer, enter a truncated version that will differentiate this resource from others in displays. Full titles longer than 255 characters may be optionally recorded below.'
+      label: Required
+    group_relationships:
+      format_settings:
+        description: 'Relationships between this resource and other resources'
+      label: Relationships
+    group_title_details:
+      format_settings:
+        description: 'More specific title fields that are needed less frequently'
+      label: 'Title Details'
+    group_identifiers:
+      label: Identifiers
+    group_publication_details:
+      label: 'Publication Details'
+    group_additional_date_types:
+      format_settings:
+        description: 'Less-frequently needed fields for specific types of dates'
+      label: 'Additional Date Types'
+    group_specific_description_field:
+      format_settings:
+        description: 'Fields that capture description elements of specific types'
+      label: 'Specific Description Fields'
+    group_classification_:
+      label: 'Classification '
+    group_specific_subject_types:
+      label: 'Specific Subject Types'
+    group_geographic_coordinates:
+      label: 'Geographic Coordinates'

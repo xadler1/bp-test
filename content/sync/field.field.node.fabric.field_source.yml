@@ -1,0 +1,19 @@
+uuid: 897d18cd-21a9-4e08-b63a-f4ae53daebe8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source
+    - node.type.fabric
+id: node.fabric.field_source
+field_name: field_source
+entity_type: node
+bundle: fabric
+label: 'Description author'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

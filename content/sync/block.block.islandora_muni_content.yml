@@ -1,0 +1,22 @@
+uuid: 1fd4de5e-a85c-4f0f-b249-7f9f4f1a492b
+langcode: cs
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: DfXoTqXg8PcJVRXbaLpiKOD7P9LNf3NPTbeRpwACgHo
+id: islandora_muni_content
+theme: islandora_muni
+region: header
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

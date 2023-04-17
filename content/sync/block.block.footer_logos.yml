@@ -1,0 +1,48 @@
+uuid: 8a101ba9-3d17-4bb5-8a22-d24db9f4a6b4
+langcode: cs
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.footer_logos
+  module:
+    - context
+    - islandora
+    - simple_block
+  theme:
+    - islandora_muni
+id: footer_logos
+theme: islandora_muni
+region: footer_first
+weight: -18
+provider: null
+plugin: 'simple_block:footer_logos'
+settings:
+  id: 'simple_block:footer_logos'
+  label: footer_logos
+  label_display: '0'
+  provider: simple_block
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

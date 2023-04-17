@@ -1,0 +1,29 @@
+uuid: 80478252-4861-4d9a-9287-2e9570219d75
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_base_colour
+    - node.type.fabric
+    - taxonomy.vocabulary.technique_base_colour
+id: node.fabric.field_technique_base_colour
+field_name: field_technique_base_colour
+entity_type: node
+bundle: fabric
+label: 'Barva základu'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      technique_base_colour: technique_base_colour
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

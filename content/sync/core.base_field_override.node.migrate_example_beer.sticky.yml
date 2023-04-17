@@ -1,0 +1,22 @@
+uuid: 0ec9a9d0-a465-42bb-9642-ff9429646c9c
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_beer
+id: node.migrate_example_beer.sticky
+field_name: sticky
+entity_type: node
+bundle: migrate_example_beer
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

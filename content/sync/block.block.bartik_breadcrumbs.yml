@@ -1,0 +1,27 @@
+uuid: 67d1ed72-75a0-4a74-8399-5ae94f13b4f3
+langcode: cs
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: FW6GK-IEpW_hY-HCHX_W91L22EiEawSU_uACVpPjTBs
+id: bartik_breadcrumbs
+theme: bartik
+region: header
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Drobečková navigace'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

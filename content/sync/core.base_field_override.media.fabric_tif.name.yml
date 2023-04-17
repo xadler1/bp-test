@@ -1,0 +1,20 @@
+uuid: 2f781861-4d67-46e8-bd6e-f4ef11f23efb
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_tif
+id: media.fabric_tif.name
+field_name: name
+entity_type: media
+bundle: fabric_tif
+label: Name
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

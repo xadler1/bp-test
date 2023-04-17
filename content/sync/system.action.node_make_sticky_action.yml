@@ -1,0 +1,13 @@
+uuid: 723225e2-5ac4-4e66-ae23-5a9edb4e85ad
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: sOb26JSy3fGpWkvR0WYN6_hMqj_6d1rvbvrkzp1yya0
+id: node_make_sticky_action
+label: 'Přilepit obsah nahoru v seznamu'
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

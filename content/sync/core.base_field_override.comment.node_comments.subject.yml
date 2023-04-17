@@ -1,0 +1,18 @@
+uuid: 2b5becca-c52b-44a9-9bfc-5c321c280501
+langcode: cs
+status: true
+dependencies:
+  config:
+    - comment.type.node_comments
+id: comment.node_comments.subject
+field_name: subject
+entity_type: comment
+bundle: node_comments
+label: Subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

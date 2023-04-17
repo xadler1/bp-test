@@ -1,0 +1,22 @@
+uuid: 3cc165d7-f706-4bc7-b7e3-97de88ee2861
+langcode: cs
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - islandora_muni
+_core:
+  default_config_hash: 6ID1aMXowizCnX23w9OOiyRTruUaIw_HXXE3C3LFKt8
+id: islandora_muni_help
+theme: islandora_muni
+region: header
+weight: -10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

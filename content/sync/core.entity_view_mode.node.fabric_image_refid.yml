@@ -1,0 +1,10 @@
+uuid: e90ece84-bad2-4fa6-bec9-3a62d2e74534
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+id: node.fabric_image_refid
+label: 'Katalogové číslo'
+targetEntityType: node
+cache: true

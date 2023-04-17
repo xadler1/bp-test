@@ -1,0 +1,13 @@
+uuid: f2ad944d-611c-465c-8a73-c95dcc11f4b5
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
+id: personal
+label: 'Osobní kontaktní formulář'
+recipients: {  }
+reply: ''
+weight: 0
+message: 'Vaše zpráva byla odeslána.'
+redirect: ''

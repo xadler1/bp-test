@@ -1,0 +1,11 @@
+uuid: 98b484ab-ba43-4e94-ac38-dcc44008b7ce
+langcode: cs
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: bp_calculate_position
+title: 'BP calculate position search'
+content:
+  value: "<p><script>\r\nvar results_per_page = 40;\r\nvar language = location.pathname.split(\"/\")[1];\r\nvar separator = \"&\";\r\nif (!location.search || location.search.length === 0) {\r\n    separator = \"?\";\r\n}\r\n\r\nif (language === \"\") {\r\n    language = \"cs\";\r\n}\r\n\r\n// The block is used for both homepage and search page, both are redirected to search/paged\r\nvar paged_search_url = \"/\" + language + \"/search/paged\" + location.search + separator + \"page=\";\r\n\r\nvar params = new URLSearchParams(location.search);\r\nvar page_number = params.get(\"page\");\r\nvar link;\r\n\r\nif (page_number == null) {\r\n    page_number = 0;\r\n}\r\n\r\nvar fabric_search_page = document.getElementsByClassName('region region-content')[0];\r\nvar fabric_search_page_results = fabric_search_page.getElementsByClassName('view-content')[0];\r\nvar grid_sections = fabric_search_page_results.getElementsByClassName('views-view-grid');\r\n\r\nvar items;\r\nvar tags;\r\nvar counter = 0;\r\n\r\nfor (i = 0; i < grid_sections.length; i++) {\r\n    items = grid_sections[i].getElementsByClassName('views-col');\r\n\r\n    for (j = 0; j <\_items.length; j++) {\r\n        link = paged_search_url + (page_number * results_per_page + counter);\r\n        tags = items[j].getElementsByClassName('field-content');\r\n        for (k = 0; k <\_tags.length; k++) {\r\n                //document.write(tags[k].children[0]);\r\n                tags[k].children[0].href=link;\r\n        }\r\n\r\n        counter += 1;\r\n    }\r\n}\r\n</script></p>\r\n"
+  format: full_html

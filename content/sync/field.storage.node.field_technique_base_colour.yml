@@ -1,0 +1,24 @@
+uuid: dcf57538-e8da-43e5-912a-61c374c0c54a
+langcode: cs
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - node
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_technique_base_colour
+field_name: field_technique_base_colour
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

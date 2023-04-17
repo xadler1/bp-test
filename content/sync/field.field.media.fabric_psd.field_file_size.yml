@@ -1,0 +1,23 @@
+uuid: 77db1752-fb22-4a4d-a85b-89a63d09aa72
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file_size
+    - media.type.fabric_psd
+id: media.fabric_psd.field_file_size
+field_name: field_file_size
+entity_type: media
+bundle: fabric_psd
+label: 'File size'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

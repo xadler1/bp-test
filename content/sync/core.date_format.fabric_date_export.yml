@@ -1,0 +1,8 @@
+uuid: 49d60dbb-9018-4a1c-9b91-0da0712b69e6
+langcode: cs
+status: true
+dependencies: {  }
+id: fabric_date_export
+label: 'Fabric date export'
+locked: false
+pattern: Y_m_d

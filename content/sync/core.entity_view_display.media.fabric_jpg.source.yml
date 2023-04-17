@@ -1,0 +1,34 @@
+uuid: cc64ee13-bcec-4670-969c-1b1ef9d13aa7
+langcode: cs
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.source
+    - field.field.media.fabric_jpg.field_file_size
+    - field.field.media.fabric_jpg.field_media_image
+    - field.field.media.fabric_jpg.field_media_of
+    - field.field.media.fabric_jpg.field_media_use
+    - media.type.fabric_jpg
+id: media.fabric_jpg.source
+targetEntityType: media
+bundle: fabric_jpg
+mode: source
+content:
+  bp_image_download_link_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  fabric_image_download_link_entity_view_1: true
+  fabric_image_download_link_entity_view_2: true
+  field_file_size: true
+  field_media_image: true
+  field_media_of: true
+  field_media_use: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

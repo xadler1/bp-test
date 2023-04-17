@@ -1,0 +1,22 @@
+uuid: 8ccce9f7-f393-484c-b1d9-6206040abfa5
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_psd
+id: media.fabric_psd.status
+field_name: status
+entity_type: media
+bundle: fabric_psd
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

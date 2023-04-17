@@ -1,0 +1,18 @@
+uuid: 86b71d29-443d-40d3-894d-c320f3e8dc49
+langcode: cs
+status: true
+dependencies: {  }
+label: 'BP show comparison page link'
+name: bp_show_comparison_page_link
+group: null
+description: ''
+requireAllConditions: false
+disabled: false
+conditions:
+  context_all:
+    id: context_all
+    negate: false
+    uuid: 47bcfa4c-92e0-49c8-9549-fe7a3d5020fa
+    values: ''
+reactions: {  }
+weight: 0

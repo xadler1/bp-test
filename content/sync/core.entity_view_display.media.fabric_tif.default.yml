@@ -1,0 +1,68 @@
+uuid: 978d7c01-e1c7-45bb-a291-e55f38e6b66f
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.field.media.fabric_tif.field_file_size
+    - field.field.media.fabric_tif.field_media_file
+    - field.field.media.fabric_tif.field_media_of
+    - field.field.media.fabric_tif.field_media_use
+    - media.type.fabric_tif
+  module:
+    - file
+id: media.fabric_tif.default
+targetEntityType: media
+bundle: fabric_tif
+mode: default
+content:
+  bp_media_download_link_entity_view_5:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  fabric_image_download_link_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_file_size:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_media_file:
+    type: file_default
+    label: visually_hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_media_of:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_use:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  created: true
+  fabric_image_download_link_entity_view_5: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

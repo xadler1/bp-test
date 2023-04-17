@@ -1,0 +1,29 @@
+uuid: 57bce617-fb45-4d9c-b970-02e2a0bc37f4
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pattern_type
+    - node.type.fabric
+    - taxonomy.vocabulary.pattern_type
+id: node.fabric.field_pattern_type
+field_name: field_pattern_type
+entity_type: node
+bundle: fabric
+label: 'Typ dekoru'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pattern_type: pattern_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

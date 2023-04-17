@@ -1,0 +1,29 @@
+uuid: 06176260-4ae8-47af-9051-eac5aa93f91a
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique_warp
+    - node.type.fabric
+    - taxonomy.vocabulary.technique_warp
+id: node.fabric.field_technique_warp
+field_name: field_technique_warp
+entity_type: node
+bundle: fabric
+label: 'Typ osnovy'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      technique_warp: technique_warp
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

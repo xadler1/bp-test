@@ -1,0 +1,29 @@
+uuid: dec15599-9b5e-4ea9-99f7-3f48ba2a6df2
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pattern_subject_detailed
+    - node.type.fabric
+    - taxonomy.vocabulary.pattern_subject_detailed
+id: node.fabric.field_pattern_subject_detailed
+field_name: field_pattern_subject_detailed
+entity_type: node
+bundle: fabric
+label: 'Rostlinné motivy'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pattern_subject_detailed: pattern_subject_detailed
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

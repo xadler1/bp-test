@@ -1,0 +1,15 @@
+uuid: 339ebd3f-9375-4816-9037-86995e1259fa
+langcode: cs
+status: true
+dependencies: {  }
+id: fabric_psd
+label: 'Fabric psd'
+description: 'Full size psd file.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name
+  filesize: field_file_size

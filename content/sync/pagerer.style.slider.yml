@@ -1,0 +1,86 @@
+_core:
+  default_config_hash: Z78iYq8wmBpdGFcOazxhaM6QKFuLEXxNMzEkPzp0JQ0
+langcode: cs
+default_config:
+  display: pages
+  display_restriction: 2
+  prefix_display: true
+  suffix_display: true
+  first_link: never
+  previous_link: never
+  next_link: never
+  last_link: never
+  slider_width: 27
+  slider_action: tickmark
+  slider_action_timeout: 0
+  slider_navigation_icons: 'yes'
+  tags:
+    pages:
+      prefix_label: Stránka
+      suffix_label: 'of @total'
+      page_current: '@number'
+      page_current_title: 'Aktuální stránka'
+      page_current_reader: 'Aktuální stránka'
+      first: «
+      first_title: 'Přejít na první stranu'
+      first_reader: 'First page'
+      previous: ‹
+      previous_title: 'Přejít na předchozí stranu'
+      previous_reader: 'Předchozí stránka'
+      next: ›
+      next_title: 'Přejít na další stranu'
+      next_reader: 'Následující stránka'
+      last: »
+      last_title: 'Přejít na poslední stranu'
+      last_reader: 'Poslední stránka'
+      pageset_empty: 'No pages to display.'
+      page_previous: '@number'
+      page_next: '@number'
+      slider_title: 'Drag the handle to the page required.'
+      slider_tickmark_title: 'Then, click on the tickmark.'
+    items:
+      prefix_label: Item
+      suffix_label: 'of @total_items'
+      page_current: '@item'
+      page_current_title: 'Current items'
+      page_current_reader: 'Current items'
+      first: «
+      first_title: 'Go to first item'
+      first_reader: 'První položka'
+      previous: ‹
+      previous_title: 'Go to previous items'
+      previous_reader: 'Previous items'
+      next: ›
+      next_title: 'Go to next items'
+      next_reader: 'Next items'
+      last: »
+      last_title: 'Go to last item'
+      last_reader: 'Last item'
+      pageset_empty: 'No items to display.'
+      page_previous: '@item'
+      page_next: '@item'
+      slider_title: 'Drag the handle to the item required.'
+      slider_tickmark_title: 'Then, click on the tickmark.'
+    item_ranges:
+      prefix_label: Položky
+      suffix_label: 'of @total_items'
+      page_current: '@item_low-@item_high'
+      page_current_title: 'Current items'
+      page_current_reader: 'Current items'
+      first: «
+      first_title: 'Go to first items'
+      first_reader: 'First items'
+      previous: ‹
+      previous_title: 'Go to previous items'
+      previous_reader: 'Previous items'
+      next: ›
+      next_title: 'Go to next items'
+      next_reader: 'Next items'
+      last: »
+      last_title: 'Go to last items'
+      last_reader: 'Last items'
+      pageset_empty: 'No items to display.'
+      page_previous: '@item_low-@item_high'
+      page_next: '@item_low-@item_high'
+      slider_title: 'Drag the handle to the item range required.'
+      slider_tickmark_title: 'Then, click on the tickmark.'

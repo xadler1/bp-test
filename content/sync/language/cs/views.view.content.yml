@@ -1,0 +1,24 @@
+label: Obsah
+display:
+  default:
+    display_options:
+      title: Obsah
+      fields:
+        status:
+          settings:
+            format_custom_true: Publikováno
+      exposed_form:
+        options:
+          exposed_sorts_label: 'Seřadit podle'
+      filters:
+        status:
+          group_info:
+            group_items:
+              1:
+                title: Publikováno
+  page_1:
+    display_options:
+      menu:
+        title: Obsah
+      tab_options:
+        title: Obsah

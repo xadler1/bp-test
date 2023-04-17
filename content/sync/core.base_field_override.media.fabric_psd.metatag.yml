@@ -1,0 +1,18 @@
+uuid: 47d52688-65af-4150-af0c-32278ebff8a9
+langcode: cs
+status: true
+dependencies:
+  config:
+    - media.type.fabric_psd
+id: media.fabric_psd.metatag
+field_name: metatag
+entity_type: media
+bundle: fabric_psd
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,30 @@
+uuid: b85ce908-cc9f-4ce9-bff2-34f7c895c4e0
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.subject
+  module:
+    - taxonomy
+_core:
+  default_config_hash: 3WGvlX2CdD-Ul3QsGMJ1X9gbKrSeQIbaPYOZpuyKiF8
+id: taxonomy_term.subject
+targetEntityType: taxonomy_term
+bundle: subject
+types:
+  - 'schema:Thing'
+fieldMappings:
+  name:
+    properties:
+      - 'schema:name'
+  description:
+    properties:
+      - 'schema:description'
+  field_authority_link:
+    properties:
+      - 'schema:sameAs'
+  changed:
+    properties:
+      - 'schema:dateModified'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'

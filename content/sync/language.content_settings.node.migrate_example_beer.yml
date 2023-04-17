@@ -1,0 +1,18 @@
+uuid: 38b39a24-a563-4551-8b9b-462aff59443c
+langcode: cs
+status: true
+dependencies:
+  config:
+    - node.type.migrate_example_beer
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.migrate_example_beer
+target_entity_type_id: node
+target_bundle: migrate_example_beer
+default_langcode: site_default
+language_alterable: false

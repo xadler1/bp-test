@@ -1,0 +1,10 @@
+uuid: 59a73b26-dc97-4a9b-910b-2a71ef737b1d
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+id: node.search_thumbnail
+label: 'Search thumbnail'
+targetEntityType: node
+cache: true

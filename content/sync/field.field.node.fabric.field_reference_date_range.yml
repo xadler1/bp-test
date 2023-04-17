@@ -1,0 +1,102 @@
+uuid: 16210530-a8ce-43ad-8968-cb3010fe6405
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reference_date_range
+    - node.type.fabric
+    - views.view.bp_date_range
+  module:
+    - viewfield
+id: node.fabric.field_reference_date_range
+field_name: field_reference_date_range
+entity_type: node
+bundle: fabric
+label: Datace
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: bf82c2a0-8f44-4ff4-85eb-8553a9ff67b0
+    display_id: block_1
+    arguments: '[node:nid]'
+    items_to_display: ''
+    token_help: ''
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    bp_date_range: bp_date_range
+    all_taxonomy_terms: '0'
+    bp_author_with_orcid_link: '0'
+    bp_entry_author: '0'
+    bp_eva_refid: '0'
+    bp_fabric_title: '0'
+    bp_image_download_links: '0'
+    bp_jpg_thumbnail: '0'
+    bp_media_download_link: '0'
+    bp_homepage: '0'
+    bp_similar_images_media: '0'
+    bp_thumbnail_header: '0'
+    bp_total_item_count: '0'
+    bp_view_image: '0'
+    bp_search: '0'
+    fabric_catalogue_numbere: '0'
+    comment: '0'
+    content_browser: '0'
+    block_content: '0'
+    fabric_title: '0'
+    file_checksum: '0'
+    files: '0'
+    frontpage: '0'
+    iiif_manifest: '0'
+    fabric_image_download: '0'
+    fabric_image_download_link: '0'
+    media_of: '0'
+    manage_members: '0'
+    media: '0'
+    display_media: '0'
+    members: '0'
+    non_fedora_files: '0'
+    oai_pmh: '0'
+    content: '0'
+    openseadragon_media_evas: '0'
+    pdfjs_media_evas: '0'
+    user_admin_people: '0'
+    comments_recent: '0'
+    content_recent: '0'
+    reorder_children: '0'
+    fabric_search_result_brief_eva: '0'
+    solr_search_content: '0'
+    relates_to: '0'
+    taxonomy_term: '0'
+    term_from_term_name: '0'
+    term_from_uri: '0'
+    terms_in_vocabulary: '0'
+    test_empty_view: '0'
+    test_view: '0'
+    test_view_taxonomy: '0'
+    fabric_thumbnail_header: '0'
+    fabric_export_metadata: '0'
+    watchdog: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+    workbench_current_user: '0'
+    workbench_edited: '0'
+    workbench_recent_content: '0'
+  allowed_display_types:
+    block: block
+    attachment: '0'
+    data_export: '0'
+    default: '0'
+    embed: '0'
+    entity_browser: '0'
+    entity_reference: '0'
+    entity_view: '0'
+    feed: '0'
+    page: '0'
+    rest_export: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

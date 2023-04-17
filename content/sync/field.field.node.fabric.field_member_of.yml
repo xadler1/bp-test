@@ -1,0 +1,28 @@
+uuid: c9767654-8418-469b-8786-2ffe9a9aabe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_of
+    - node.type.fabric
+id: node.fabric.field_member_of
+field_name: field_member_of
+entity_type: node
+bundle: fabric
+label: 'Member of'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      fabric: fabric
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

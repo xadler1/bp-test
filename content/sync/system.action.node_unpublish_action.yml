@@ -1,0 +1,13 @@
+uuid: 26ff64f4-c4b8-4a0b-9598-d7f00b7d8544
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: C7X8h9FWlwkQ9y5mnU2JzgaZICAdc6HFbPVbhvjlAYE
+id: node_unpublish_action
+label: 'Skrýt obsah'
+type: node
+plugin: 'entity:unpublish_action:node'
+configuration: {  }

@@ -1,0 +1,9 @@
+uuid: 8f2adb4a-a1ae-4339-b150-b28f387ecafe
+langcode: cs
+status: true
+dependencies: {  }
+id: search_api__views_page__fabric_homepage__page_4
+name: 'search_api:views_page__fabric_homepage__page_4'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

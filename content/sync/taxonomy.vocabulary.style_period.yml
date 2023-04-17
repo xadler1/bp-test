@@ -1,0 +1,8 @@
+uuid: 2e51f381-34de-4582-b2e6-bec9f182e895
+langcode: cs
+status: true
+dependencies: {  }
+name: 'Stylové období'
+vid: style_period
+description: ''
+weight: -10

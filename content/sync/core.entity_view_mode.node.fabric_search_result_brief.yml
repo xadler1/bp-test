@@ -1,0 +1,10 @@
+uuid: f7462db2-1b5a-48fa-9fa1-afb9e3c0754c
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+id: node.fabric_search_result_brief
+label: 'Search result brief'
+targetEntityType: node
+cache: true

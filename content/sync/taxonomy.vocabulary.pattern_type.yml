@@ -1,0 +1,8 @@
+uuid: 90e39343-f3c5-49bc-8848-6dbdb5f6c964
+langcode: cs
+status: true
+dependencies: {  }
+name: 'Typ dekoru'
+vid: pattern_type
+description: ''
+weight: -7

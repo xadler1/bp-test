@@ -1,0 +1,8 @@
+uuid: 288f4652-590b-4b8b-b7a3-937e0fcd441e
+langcode: cs
+status: true
+dependencies: {  }
+name: 'Typ předmětu'
+vid: object_type_basic
+description: ''
+weight: -5

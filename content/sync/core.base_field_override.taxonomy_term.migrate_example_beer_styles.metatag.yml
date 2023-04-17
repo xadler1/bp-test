@@ -1,0 +1,18 @@
+uuid: 029c57bb-0d5f-4265-84b4-dceded708fbc
+langcode: cs
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.migrate_example_beer_styles
+id: taxonomy_term.migrate_example_beer_styles.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: migrate_example_beer_styles
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

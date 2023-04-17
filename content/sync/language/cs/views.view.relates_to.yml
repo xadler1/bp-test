@@ -1,0 +1,9 @@
+label: 'Souvisí s dekorem'
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: "<p>Souvisí s dekorem:</p>\r\n"
+            format: basic_html

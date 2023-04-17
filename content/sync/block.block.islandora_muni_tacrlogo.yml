@@ -1,0 +1,48 @@
+uuid: 814aa5bf-1d0a-43d8-bf4b-b7a68a843c41
+langcode: cs
+status: false
+dependencies:
+  config:
+    - simple_block.simple_block.tacr_logo
+  module:
+    - context
+    - islandora
+    - simple_block
+  theme:
+    - islandora_muni
+id: islandora_muni_tacrlogo
+theme: islandora_muni
+region: footer_first
+weight: -11
+provider: null
+plugin: 'simple_block:tacr_logo'
+settings:
+  id: 'simple_block:tacr_logo'
+  label: 'TAČR logo'
+  label_display: '0'
+  provider: simple_block
+visibility:
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  media_source_mimetype:
+    id: media_source_mimetype
+    negate: false
+    context_mapping: {  }
+    mimetype: ''

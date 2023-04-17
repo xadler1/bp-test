@@ -1,0 +1,21 @@
+uuid: f7c715f4-f0a8-4d34-be00-15ea0b5c3e20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_of_creation_decade
+    - node.type.fabric
+  module:
+    - controlled_access_terms
+id: node.fabric.field_date_of_creation_decade
+field_name: field_date_of_creation_decade
+entity_type: node
+bundle: fabric
+label: Period
+description: 'Rozsah ve formátu RRRR/RRRR.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: edtf
