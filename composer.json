@@ -132,7 +132,7 @@
         },
 	"merge-plugin": {
             "include": [
-                "modules/contrib/masonry/composer.libraries.json"
+                "web/modules/contrib/masonry/composer.libraries.json"
             ]
         }
     }
