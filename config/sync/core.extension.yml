@@ -149,10 +149,10 @@ module:
   views_ui: 0
   content_translation: 10
   views: 10
-  standard: 1000
+  minimal: 1000
 theme:
   claro: 0
   bartik: 0
   olivero: 0
   islandora_muni: 0
-profile: standard
+profile: minimal
