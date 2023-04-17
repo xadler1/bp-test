@@ -33,6 +33,7 @@
         "drupal/field_token_value": "^2.0",
         "drupal/flood_control": "^2.2",
         "drupal/manage_display": "^2.0@beta",
+        "drupal/masonry": "^1.2",
         "drupal/matomo": "^1.7",
         "drupal/metatag": "^1.19",
         "drupal/migrate_conditions": "^2.0@beta",
@@ -75,6 +76,7 @@
         "islandora/controlled_access_terms": "^2",
         "islandora/islandora_defaults": "^2",
         "islandora/openseadragon": "^2",
+        "wikimedia/composer-merge-plugin": "^2.1",
         "zaporylie/composer-drupal-optimizations": "^1.1"
     },
     "conflict": {
@@ -126,6 +128,11 @@
                 "      https://www.drupal.org/getting-involved",
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
+            ]
+        },
+	"merge-plugin": {
+            "include": [
+                "modules/contrib/masonry/composer.libraries.json"
             ]
         }
     }
